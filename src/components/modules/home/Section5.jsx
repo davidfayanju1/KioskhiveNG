@@ -50,7 +50,7 @@ const Section5 = () => {
       <div className="slider_components my-[2rem] w-full gap-[2rem] flex px-[2rem] md:flex-row flex-col items-center justify-center">
         {customers.map((item) => (
           <div
-            className="card_element md:w-full w-[43rem] border-solid border-[1px] p-[1rem] rounded-[10px]"
+            className="card_element w-full border-solid border-[1px] p-[1rem] rounded-[10px]"
             key={item.name}
           >
             <div className="svg">
