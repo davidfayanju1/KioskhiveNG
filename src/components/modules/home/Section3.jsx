@@ -47,7 +47,7 @@ const Section3 = () => {
           <small className="text-[#F79009] text-[.8rem] mb-[.8rem] font-[600] text-center">
             Features
           </small>
-          <span className="block font-[700] md:text-[2rem] text-[1.3rem] mb-[.6rem] text-[#101828] text-center">
+          <span className="block font-[700] md:text-[2rem] text-[1.67rem] mb-[.6rem] text-[#101828] text-center">
             Empowering your business journey
           </span>
           <small className="font-light text-black block text-center w-[95%]">
@@ -63,7 +63,7 @@ const Section3 = () => {
               <div className="text-left">
                 <img src={item.svg} alt="" />
               </div>
-              <h1 className="title font-[600] my-[.8rem] text-[1rem] text-left">
+              <h1 className="title font-[600] my-[.8rem] text-[1.3rem] text-left">
                 {item.title}
               </h1>
 
@@ -78,7 +78,7 @@ const Section3 = () => {
               <div className="text-left">
                 <img src={item.svg} alt="" />
               </div>
-              <h1 className="title font-[600] my-[.8rem] text-[1rem] text-left">
+              <h1 className="title font-[600] my-[.8rem] text-[1.3rem] text-left">
                 {item.title}
               </h1>
 

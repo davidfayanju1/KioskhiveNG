@@ -36,7 +36,7 @@ const Section5 = () => {
       </small>
 
       <div className="text_container text-center mx-auto mt-[1rem]">
-        <span className="block font-[700] md:text-[2.4rem] text-[1.4rem]">
+        <span className="block font-[700] md:text-[2.4rem] text-[1.6rem]">
           What are people saying
         </span>
         <blockquote className="text-[#667085] mx-auto w-[95%] md:text-[1rem] text-[.8rem] text-center block">
@@ -47,7 +47,7 @@ const Section5 = () => {
         </blockquote>
       </div>
 
-      <div className="slider_components my-[2rem] w-full gap-[2rem] flex px-[2rem] md:flex-row flex-col items-center justify-center">
+      <div className="slider_components my-[2rem] w-full gap-[2rem] flex md:flex-row flex-col items-center justify-center">
         {customers.map((item) => (
           <div
             className="card_element w-full border-solid border-[1px] p-[1rem] rounded-[10px]"
