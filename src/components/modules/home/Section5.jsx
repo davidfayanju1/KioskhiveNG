@@ -39,7 +39,7 @@ const Section5 = () => {
         <span className="block font-[700] md:text-[2.4rem] text-[1.3rem] mb-[1.1rem]">
           What are people saying
         </span>
-        <blockquote className="text-[#667085] mx-auto w-[95%] md:text-[1rem] text-[.7rem] text-center block">
+        <blockquote className="text-[#667085] mx-auto w-[95%] md:text-[1rem] text-[.9rem] text-center block">
           Thank you for your trust in Kioskhive! We are grateful for your
           feedback and are committed to providing the best [products/services
           offered]. Read what our clients have to say about their experience
@@ -50,13 +50,13 @@ const Section5 = () => {
       <div className="slider_components md:px-0 px-[.5rem] my-[2rem] w-full gap-[2rem] flex md:flex-row flex-col items-center justify-center">
         {customers.map((item) => (
           <div
-            className="card_element w-full border-solid border-[1px] md:p-[1rem] mx-auto p-[.5rem] rounded-[10px]"
+            className="card_element w-full border-solid border-[1px] md:p-[1rem] p-[.8rem] rounded-[10px]"
             key={item.name}
           >
             <div className="svg">
               <img src="/svgs/quote.svg" alt="" />
             </div>
-            <blockquote className="text-[#4D4D4D] md:text-[.8rem] text-[.7rem] my-[1rem]">
+            <blockquote className="text-[#667085] text-[.9rem] my-[1rem]">
               {item.text}
             </blockquote>
 

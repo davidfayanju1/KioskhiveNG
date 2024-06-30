@@ -58,7 +58,7 @@ const Footer = () => {
 
       <div className="line w-full bg-[#333333] h-[.1rem]"></div>
       <div className="third_container mx-auto md:flex-row flex-col md:w-[80%] w-full flex items-center gap-[1rem] justify-between">
-        <span className="text block text-[#808080] text-[.7rem]">
+        <span className="text block text-[#808080] text-[.9rem] text-center mb-2">
           Kioskhive eCommerce © 2024. All Rights Reserved
         </span>
         <div className="flex items-center md:justify-center justify-between gap-4 w-full">

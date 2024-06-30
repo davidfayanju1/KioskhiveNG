@@ -44,13 +44,13 @@ const Section3 = () => {
     <section className="flex items-center justify-center md:px-[4rem] md:py-[4rem] py-[2rem] px-[1rem] min-h-[40vh] bg-[#FFFCF5]">
       <div className="section_container">
         <div className="item-container text-center  md:mb-[2rem] mb-[3.5rem]">
-          <small className="text-[#F79009] text-[.8rem] mb-[1.3rem] font-[600] text-center">
+          <small className="text-[#F79009] block text-[.8rem] mb-[1rem] font-[600] text-center">
             Features
           </small>
-          <span className="block w-full font-[700] md:text-[2rem] text-[1.17rem] mb-[.6rem] text-[#101828] text-center">
+          <span className="block w-full font-[700] md:text-[2rem] text-[1.33rem] mb-[.6rem] text-[#101828] text-center">
             Empowering Your Business Journey
           </span>
-          <small className="font-light text-black block text-center w-[95%]">
+          <small className="font-light text-[#667085] block text-[1rem] mx-auto text-center w-[95%]">
             Lorem ipsum dolor sit amet consectetur. Maecenas eu cras tortor
             suspendisse purus cras. In et sed nunc ante proin et urna praesent
             neque. At sed at in sit. Ornare
@@ -63,10 +63,10 @@ const Section3 = () => {
               <div className="text-left">
                 <img src={item.svg} alt="" />
               </div>
-              <h1 className="title font-[600] my-[.8rem] text-[1.1rem] text-left">
+              <h1 className="title font-[600] my-[.8rem] text-[1.2rem] text-left">
                 {item.title}
               </h1>
-              <p className="text-left text-[#667085] text-[.9rem]">
+              <p className="text-left text-[#667085] text-[1rem]">
                 {item.text}
               </p>
             </div>

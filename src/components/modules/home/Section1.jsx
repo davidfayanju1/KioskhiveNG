@@ -3,9 +3,9 @@ import Button from "../../common/Button";
 
 const Section1 = () => {
   return (
-    <section className="flex   pb-[3rem] pt-[1rem] md:px-[4rem] px-[1rem] md:flex-row flex-col items-center justify-between">
+    <section className="flex pb-[3rem] pt-[2rem] md:px-[4rem] px-[1rem] md:flex-row flex-col items-center justify-between">
       <div className="first_container md:w-[50%] w-full">
-        <small className="title mb-[1rem] h-[1.2rem] !text-[.7rem] flex items-center justify-center w-[12rem] p-[.4rem] rounded-full border-[1px] bordersolid border-gray-300">
+        <small className="title mb-[1rem] h-[1.2rem] !text-[.7rem] flex items-center justify-center md:w-[12rem] w-[60%] p-[.4rem] rounded-full border-[1px] border-solid border-gray-300">
           <span className="text-blue-800">#01</span>
           ECOMMERCE PLATFORM 2024
         </small>
@@ -25,7 +25,7 @@ const Section1 = () => {
           <Button
             name={"Explore Marketplace"}
             className={
-              "!border-solid border-[1px] border-gray-[#F7F7F7] !text-[#606060] !text-[.8rem] !w-full"
+              "!border-solid border-[1px] border-gray-[#F7F7F7] !text-[#606060] !w-full"
             }
           />
         </div>
