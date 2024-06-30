@@ -1,6 +1,7 @@
 import React from "react";
 import { NavLink, useNavigate } from "react-router-dom";
 import Button from "./Button";
+import { useState } from "react";
 
 const Nav = ({ active }) => {
   const navigate = useNavigate();
@@ -23,8 +24,10 @@ const Nav = ({ active }) => {
     },
   ];
 
+  const [open, setOpen] = useState(true);
+
   return (
-    <header className="w-full flex items-center justify-between md:px-[4rem] px-[1rem] min-h-[5rem]">
+    <header className="w-full flex items-center justify-between md:px-[4rem]  border-b-[.2px] border-gray-200 px-[1rem] min-h-[5rem]">
       <div className="title flex items-center justify-center gap-[2rem]">
         <figure className="logo_container h-[2rem] w-[6rem]">
           <img src="/svgs/company.svg" alt="" />
@@ -44,7 +47,18 @@ const Nav = ({ active }) => {
         </nav>
       </div>
 
-      <div className="sign_button">
+      <div className="burger_container md:hidden block">
+        {open ? (
+          <button>
+            <img src="/svgs/burger-close.svg" alt="" />
+          </button>
+        ) : (
+          <button>
+            <img src="/svgs/burger-open.svg" alt="" />
+          </button>
+        )}
+      </div>
+      <div className="sign_button md:block hidden">
         <Button name={"Sign Up"} className={"bg-[#FC9A30]"} />
       </div>
     </header>

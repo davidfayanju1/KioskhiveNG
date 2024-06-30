@@ -16,21 +16,21 @@ const Section4 = () => {
     },
   ];
   return (
-    <section className="section_container py-[4rem]">
-      <div className="card_container relative mx-auto md:min-h-[60vh] min-h-[80vh] bg-[#248572] md:pt-[1.5rem] pt-[1rem] px-[2rem] rounded-[10px] md:w-[90%] w-[95%]">
-        <span className="title block  mb-[.3rem] font-[600] text-white md:text-[2.4rem] text-[1.9rem] text-center">
+    <section className="section_container md:py-[4rem]">
+      <div className="card_container relative mx-auto md:min-h-[60vh] min-h-[40rem] bg-[#248572] md:pt-[1.5rem] pt-[1rem] px-[2rem] md:rounded-[10px] md:w-[90%]">
+        <span className="title block  mb-[.3rem] font-[600] text-white md:text-[2.4rem] text-[1.3rem] text-center">
           Numbers speak louder
         </span>
         <small className="text-center block mb-[3rem] text-white font-[400]">
           Showcasing Our Remarkable Progress in Defining Success
         </small>
-        <div className="flex-container flex items-center justify-center gap-[1rem] md:flex-row flex-col">
+        <div className="flex-container flex items-center justify-center md:gap-[1rem] gap-[2rem] md:flex-row flex-col">
           {data.map((item) => (
             <div className="item_card">
               <div className="title font-[600] text-center text-white md:text-[1.75rem] text-[1.37rem] mb-[1rem]">
                 {item.title}
               </div>
-              <div className="text text-white font-[400] text-center">
+              <div className="text text-white font-[400] text-center text-[.8rem]">
                 {item.text}
               </div>
             </div>
