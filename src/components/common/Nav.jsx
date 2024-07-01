@@ -1,10 +1,12 @@
-import React from "react";
-import { NavLink, useNavigate } from "react-router-dom";
+import React, { useState } from "react";
+import { useNavigate } from "react-router-dom";
+import { AnimatePresence, motion } from "framer-motion";
 import Button from "./Button";
-import { useState } from "react";
 
 const Nav = ({ active }) => {
   const navigate = useNavigate();
+  const [open, setOpen] = useState(true);
+  const [openDropDown, setOpenDropDown] = useState(false);
 
   const links = [
     {
@@ -27,12 +29,20 @@ const Nav = ({ active }) => {
       url: "",
       active: 4,
       icon: () => (
-        <div className="item_container w-full ">
-          <img
-            src="/svgs/down-arrow.svg"
-            alt=""
-            className="w-[2rem] h-[2rem]"
-          />
+        <div className="item_container w-full">
+          {!openDropDown ? (
+            <img
+              src="/svgs/down-arrow.svg"
+              alt=""
+              className="w-[2rem] h-[2rem]"
+            />
+          ) : (
+            <img
+              src="/svgs/up-arrow.svg"
+              alt=""
+              className="w-[1.5rem] h-[1.5rem]"
+            />
+          )}
         </div>
       ),
       categories: [
@@ -84,11 +94,22 @@ const Nav = ({ active }) => {
     },
   ];
 
-  const [open, setOpen] = useState(true);
-  const [openDropDown, setOpenDropDown] = useState(false);
+  const animatenav = {
+    initial: { y: "-100%" },
+    animate: { y: 0 },
+    exit: { y: "-100%" },
+    transition: { duration: 0.5 },
+  };
+
+  const animatecategories = {
+    initial: { y: "-2%", opacity: 0 },
+    animate: { y: 0, opacity: 1 },
+    exit: { y: "-2%", opacity: 0 },
+    transition: { duration: 0.5 },
+  };
 
   return (
-    <header className="w-full flex items-center justify-between md:px-[4rem]  border-b-[.2px] border-gray-200 px-[1rem] min-h-[5rem]">
+    <header className="w-full flex items-center justify-between md:px-[4rem] border-b-[.2px] border-gray-200 px-[1rem] min-h-[5rem]">
       <div className="title flex items-center justify-center gap-[2rem]">
         <figure className="logo_container h-[2rem] w-[6rem]">
           <img src="/svgs/company.svg" alt="" />
@@ -107,60 +128,73 @@ const Nav = ({ active }) => {
           ))}
         </nav>
 
-        {!open && (
-          <nav className="flex flex-col w-full min-h-screen fixed top-0 left-0 bg-white z-[1000] md:hidden items-center justify-start py-[4rem] gap-[1rem]">
-            <button
-              onClick={() => setOpen(true)}
-              className="item_container rounded-full p-[.5rem] border border-gray-400"
+        <AnimatePresence>
+          {!open && (
+            <motion.nav
+              key="nav"
+              {...animatenav}
+              className="flex flex-col w-full min-h-screen fixed top-0 left-0 bg-white z-[1000] md:hidden items-center justify-start py-[4rem] gap-[1rem]"
             >
-              <img src="/svgs/cancel.svg" alt="" />
-            </button>
-            {links.map((item, i) => (
-              <div
-                key={i}
-                className={`${
-                  active === item.active
-                    ? "bg-[#FC9A30] rounded-full py-[.8rem] font-[500] text-white flex justify-center"
-                    : "text-[#727272]"
-                } ${
-                  item.icon && "flex-col flex items-center justify-between"
-                } mx-auto w-[50%] text-center ${item.icon && "justify-start"}`}
-                onClick={() => navigate(item.url)}
+              <button
+                onClick={() => setOpen(true)}
+                className="item_container rounded-full p-[.5rem] border border-gray-400"
               >
+                <img src="/svgs/cancel.svg" alt="" />
+              </button>
+              {links.map((item, i) => (
                 <div
+                  key={i}
                   className={`${
-                    item.icon &&
-                    "flex items-center justify-between w-full rounded-full px-[1rem] py-[.5rem] border-solid border-gray-200 border-[1.5px]"
+                    active === item.active
+                      ? "bg-[#FC9A30] rounded-full py-[.8rem] font-[500] text-white flex justify-center"
+                      : "text-[#727272]"
+                  } ${
+                    item.icon && "flex-col flex items-center justify-between"
+                  } mx-auto w-[50%] text-center ${
+                    item.icon && "justify-start"
                   }`}
+                  onClick={() => navigate(item.url)}
                 >
-                  {item?.name}
+                  <div
+                    className={`${
+                      item.icon &&
+                      "flex items-center justify-between w-full rounded-full px-[1rem] py-[.5rem] border-solid border-gray-200 border-[1.5px]"
+                    }`}
+                  >
+                    {item?.name}
 
-                  {item.icon && (
-                    <div
-                      className="block"
-                      onClick={() => setOpenDropDown(!openDropDown)}
-                    >
-                      {item?.icon()}
-                    </div>
-                  )}
-                </div>
-                {item.categories && openDropDown && (
-                  <div className="categories_container flex flex-col gap-[1rem] oevrflow-y-scroll w-full mt-[.9rem]">
-                    {item.categories &&
-                      item.categories.map((item) => (
-                        <div
-                          key={item.name}
-                          className="categories_container font-[500] text-left"
-                        >
-                          {item.name}
-                        </div>
-                      ))}
+                    {item.icon && (
+                      <div
+                        className="block"
+                        onClick={() => setOpenDropDown(!openDropDown)}
+                      >
+                        {item?.icon()}
+                      </div>
+                    )}
                   </div>
-                )}
-              </div>
-            ))}
-          </nav>
-        )}
+                  <AnimatePresence>
+                    {item.categories && openDropDown && (
+                      <motion.div
+                        {...animatecategories}
+                        className="categories_container flex flex-col gap-[1rem] overflow-y-scroll w-full mt-[.9rem]"
+                      >
+                        {item.categories.map((category, index) => (
+                          <div
+                            key={index}
+                            className="categories_container font-[500] text-left"
+                            onClick={() => navigate(category.url)}
+                          >
+                            {category.name}
+                          </div>
+                        ))}
+                      </motion.div>
+                    )}
+                  </AnimatePresence>
+                </div>
+              ))}
+            </motion.nav>
+          )}
+        </AnimatePresence>
       </div>
 
       <div className="burger_container md:hidden block">

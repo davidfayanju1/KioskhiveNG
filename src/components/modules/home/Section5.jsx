@@ -47,7 +47,7 @@ const Section5 = () => {
         </blockquote>
       </div>
 
-      <div className="slider_components md:px-0 px-[.5rem] my-[2rem] w-full gap-[2rem] flex md:flex-row flex-col items-center justify-center">
+      <div className="slider_components px-[.5rem] my-[2rem] w-full gap-[2rem] flex md:flex-row flex-col items-center justify-center">
         {customers.map((item) => (
           <div
             className="card_element w-full border-solid border-[1px] md:p-[1rem] p-[.8rem] rounded-[10px]"
