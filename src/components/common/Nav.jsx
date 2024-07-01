@@ -144,14 +144,13 @@ const Nav = ({ active }) => {
                     </div>
                   )}
                 </div>
-                <br />
-                {openDropDown && (
-                  <div className="categories_container flex flex-col gap-[1rem]">
+                {item.categories && openDropDown && (
+                  <div className="categories_container flex flex-col gap-[1rem] oevrflow-y-scroll w-full mt-[.9rem]">
                     {item.categories &&
                       item.categories.map((item) => (
                         <div
                           key={item.name}
-                          className="categories_container font-[500]"
+                          className="categories_container font-[500] text-left"
                         >
                           {item.name}
                         </div>
