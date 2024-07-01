@@ -108,7 +108,7 @@ const Nav = ({ active }) => {
         </nav>
 
         {!open && (
-          <nav className="flex flex-col w-full h-screen fixed top-0 left-0 bg-white z-[1000] md:hidden items-center justify-start pt-[4rem] gap-[1rem]">
+          <nav className="flex flex-col w-full min-h-screen fixed top-0 left-0 bg-white z-[1000] md:hidden items-center justify-start py-[4rem] gap-[1rem]">
             <button
               onClick={() => setOpen(true)}
               className="item_container rounded-full p-[.5rem] border border-gray-400"
