@@ -37,20 +37,48 @@ const Nav = ({ active }) => {
       ),
       categories: [
         {
-          name: "Clothes",
-          url: "/clothes",
+          name: "Computers & Laptop",
+          url: "/computer_laptop",
         },
         {
-          name: "Gadgets",
-          url: "/gadgets",
+          name: "Computers & Accessories",
+          url: "/computer-accessoriess",
         },
         {
-          name: "Food",
-          url: "/food",
+          name: "Smart Phone",
+          url: "/smar-phone",
         },
         {
-          name: "Drinks",
-          url: "/drinks",
+          name: "Headphone",
+          url: "/headphone",
+        },
+        {
+          name: "Mobile Accessories",
+          url: "/mobile-accessories",
+        },
+        {
+          name: "Gaming Console",
+          url: "/gaming_console",
+        },
+        {
+          name: "Camera & Photo",
+          url: "/camera_photo",
+        },
+        {
+          name: "TV & Home Appliances",
+          url: "/tv_home_appliances",
+        },
+        {
+          name: "Watch & Accessories",
+          url: "/watch_accessories",
+        },
+        {
+          name: "GPS & Navigation",
+          url: "/gps_navigation",
+        },
+        {
+          name: "Wearable Technology",
+          url: "warable_tech",
         },
       ],
     },
