@@ -32,7 +32,7 @@ const Section3 = () => {
 
     {
       svg: "/svgs/guaranty.svg",
-      title: "Secure Transaction Guarantee",
+      title: "Secure Transaction",
       text: "Shop and sell with confidence, knowing that your transactions and sensitive information are protected with our reliable and secure platform",
     },
 
