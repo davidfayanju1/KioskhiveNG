@@ -57,7 +57,7 @@ const Section3 = () => {
           </small>
         </div>
 
-        <div className="first_flex_container  flex items-start w-full justify-center gap-[1.5rem] md:flex-row flex-col">
+        <div className="first_flex_container flex items-start w-full justify-center gap-[1.5rem] md:flex-row flex-col">
           {firstRow.map((item) => (
             <div className="item_card  md:!w-[40%] w-full" key={item.title}>
               <div className="text-left">

@@ -24,7 +24,7 @@ const Section4 = () => {
         <small className="text-center text-[1rem] block mb-[3rem] text-white font-[400]">
           Showcasing Our Remarkable Progress in Defining Success
         </small>
-        <div className="flex-container flex items-center justify-center md:gap-[1rem] gap-[2rem] md:flex-row flex-col">
+        <div className="flex-container flex items-start justify-start md:gap-[1rem] gap-[2rem] md:flex-row flex-col">
           {data.map((item) => (
             <div className="item_card">
               <div className="title font-[600] text-center text-white md:text-[1.75rem] text-[1.37rem] mb-[1rem]">

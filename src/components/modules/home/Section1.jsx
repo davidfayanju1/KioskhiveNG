@@ -5,10 +5,6 @@ const Section1 = () => {
   return (
     <section className="flex pb-[3rem] pt-[2rem] md:px-[4rem] px-[1rem] md:flex-row flex-col items-center justify-between">
       <div className="first_container md:w-[50%] w-full">
-        <small className="title mb-[1rem] h-[1.2rem] !text-[.7rem] flex items-center justify-center md:w-[12rem] w-[60%] p-[.4rem] rounded-full border-[1px] border-solid border-gray-300">
-          <span className="text-blue-800">#01</span>
-          ECOMMERCE PLATFORM 2024
-        </small>
         <hgroup className="font-[500] text-[#000000] font-aeonik md:text-[3.2vw] text-[1.55rem]">
           Welcome to Kioskhive: Your Gateway to Business Growth
         </hgroup>
@@ -30,11 +26,11 @@ const Section1 = () => {
           />
         </div>
       </div>
-      <figure className="relative md:w-[50%] w-full md:block hidden">
+      <figure className="relative md:w-[50%]">
         <img
-          src="/images/home.png"
+          src="/svgs/hero.svg"
           alt=""
-          className="w-full md:h-[34rem] h-[23rem]"
+          className="w-full md:h-[34rem] h-[18rem]"
         />
         <img
           src="/svgs/splash.svg"

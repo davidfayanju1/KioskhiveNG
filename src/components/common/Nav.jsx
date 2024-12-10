@@ -2,7 +2,8 @@ import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { AnimatePresence, motion } from "framer-motion";
 import Button from "./Button";
-
+import { useEffect } from "react";
+import { IoIosArrowDown, IoIosArrowUp } from "react-icons/io";
 const Nav = ({ active }) => {
   const navigate = useNavigate();
   const [open, setOpen] = useState(true);
@@ -30,19 +31,7 @@ const Nav = ({ active }) => {
       active: 4,
       icon: () => (
         <div className="item_container w-full">
-          {!openDropDown ? (
-            <img
-              src="/svgs/down-arrow.svg"
-              alt=""
-              className="w-[2rem] h-[2rem]"
-            />
-          ) : (
-            <img
-              src="/svgs/up-arrow.svg"
-              alt=""
-              className="w-[1.5rem] h-[1.5rem]"
-            />
-          )}
+          {!openDropDown ? <IoIosArrowDown /> : <IoIosArrowUp />}
         </div>
       ),
       categories: [
@@ -108,8 +97,16 @@ const Nav = ({ active }) => {
     transition: { duration: 0.5 },
   };
 
+  useEffect(() => {
+    if (!open) {
+      document.body.classList.add("no-scroll");
+    } else {
+      document.body.classList.remove("no-scroll");
+    }
+  }, [open]);
+
   return (
-    <header className="w-full flex items-center justify-between md:px-[4rem] border-b-[.2px] border-gray-200 px-[1rem] min-h-[5rem]">
+    <header className="w-full flex items-center justify-between md:px-[4rem] border-b-[.2px] border-gray-200 px-[1rem] min-h-[5rem] fixed top-0 left-0 z-[50] bg-white">
       <div className="title flex items-center justify-center gap-[2rem]">
         <figure className="logo_container h-[2rem] w-[6rem]">
           <img src="/svgs/company.svg" alt="" />

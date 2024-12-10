@@ -24,7 +24,7 @@ const Section2 = () => {
           <div className="title md:my-[1rem] font-[600] text-black md:text-[1.8rem] text-[1.3rem] text-center">
             Register
           </div>
-          <span className="block text-[#757095] text-center ">
+          <span className="block text-[#757095] text-center text-[.85rem]">
             Lorem ipsum dolor sit amet consectetur. Id pulvinar felis magna eu
             eget ultrices mauris.
           </span>
