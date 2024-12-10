@@ -4,7 +4,7 @@ const Section2 = () => {
   return (
     <section className=" pb-[6rem] pt-[4rem]">
       <div className="section title md:mb-[5rem] mb-[5rem] text-center">
-        <b className="md:text-[2.1rem] text-[1.3rem] mb-[.9rem] block">
+        <b className="md:text-[2.1rem] text-[1.5rem] mb-[.9rem] block">
           How it works
         </b>
         <small className="block text-[#757095] text-[1rem] md:w-[30%] w-[90%] max-w-[43rem] mx-auto">

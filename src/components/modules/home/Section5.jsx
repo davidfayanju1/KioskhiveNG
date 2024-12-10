@@ -36,7 +36,7 @@ const Section5 = () => {
       </small>
 
       <div className="text_container text-center mx-auto mt-[1rem]">
-        <span className="block font-[700] md:text-[2.1rem] text-[1.3rem] mb-[1.1rem]">
+        <span className="block font-[700] md:text-[2.1rem] text-[1.5rem] mb-[1.1rem]">
           What are people saying
         </span>
         <blockquote className="text-[#667085] mx-auto w-[95%] max-w-[43rem] md:text-[1rem] text-[.9rem] text-center block">
