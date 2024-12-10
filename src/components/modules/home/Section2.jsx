@@ -25,8 +25,7 @@ const Section2 = () => {
             Register
           </div>
           <span className="block text-[#757095] text-center text-[1rem]">
-            Lorem ipsum dolor sit amet consectetur. Id pulvinar felis magna eu
-            eget ultrices mauris.
+            Few details required for registration
           </span>
         </div>
 
@@ -45,8 +44,7 @@ const Section2 = () => {
             Complete Setup
           </div>
           <span className="block text-[#757095] text-center text-[1rem]">
-            Lorem ipsum dolor sit amet consectetur. Id pulvinar felis magna eu
-            eget ultrices mauris.
+            Kiosk is ready almost immediately
           </span>
         </div>
 
@@ -65,8 +63,7 @@ const Section2 = () => {
             Utilize Platform
           </div>
           <span className="block text-[#757095] text-center text-[1rem]">
-            Lorem ipsum dolor sit amet consectetur. Id pulvinar felis magna eu
-            eget ultrices mauris.
+            Shop and sell quality local products
           </span>
         </div>
       </div>

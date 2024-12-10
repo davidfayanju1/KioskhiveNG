@@ -20,6 +20,12 @@ const Nav = ({ active }) => {
       url: "/marketplace",
       active: 2,
     },
+
+    {
+      name: "Blogs",
+      url: "/blogs",
+      active: 5,
+    },
     {
       name: "About Us",
       url: "/about-us",

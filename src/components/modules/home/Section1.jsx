@@ -6,14 +6,14 @@ const Section1 = () => {
     <section className="flex pb-[5rem] md:pt-[1rem] pt-[7rem] bg-[#FFFCF5] md:px-[4rem] px-[1rem] md:flex-row flex-col items-center justify-between">
       <div className="first_container md:w-[50%] w-full">
         <hgroup className="font-[500] text-[#000000] font-aeonik md:text-[3.2vw] text-[1.55rem]">
-          Welcome to Kioskhive: Your Gateway to Business Growth
+          Welcome to Kioskhive: The Perfect Local Online Marketplace For Your
+          Brand
         </hgroup>
         <p className="text-[#727272] text-[.8rem] my-[1.5rem]">
-          Lorem ipsum dolor sit amet consectetur. Tristique ut felis eu eget
-          orci fusce. A semper porta pellentesque leo. Tempus nunc elementum
-          odio et interdum non netus diam sed. Ac cursus placerat integer lectus
-          magnis nibh gravida interdum etiam. Luctus aliquet aenean est mi
-          ultrices.
+          Kioskhive is designed to assist locally emerging and established
+          brands, with the right tools to aid in faster scaling and increased
+          footprint, while providing quality and afford able products to
+          retailers, within an interactive environment.
         </p>
 
         <div className="button_components flex md:flex-row flex-col items-center justify-start gap-[1rem]">
@@ -21,7 +21,7 @@ const Section1 = () => {
           <Button
             name={"Explore Marketplace"}
             className={
-              "!border-solid shadow-lg border-[1px] border-[#F7F7F7] !text-[#606060] !w-full"
+              "!border-solid shadow-lg border-[1px] border-[#ececec] !text-[#606060] !w-full"
             }
           />
         </div>
