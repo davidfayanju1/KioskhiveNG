@@ -1,4 +1,6 @@
 import React from "react";
+import { PiPaintBrushHouseholdBold } from "react-icons/pi";
+import { LiaShippingFastSolid } from "react-icons/lia";
 
 const Section3 = () => {
   const firstRow = [
@@ -23,9 +25,9 @@ const Section3 = () => {
 
   const secondRow = [
     {
-      svg: "/svgs/options.svg",
-      title: "Flexible Pricing Options",
-      text: "Retailers can negotiate prices on products available for bidding, ensuring fair and mutually beneficial agreements for both buyers and sellers.",
+      icon: <PiPaintBrushHouseholdBold color="#F79009" />,
+      title: "Brick and Mortar",
+      text: "Set up pages with ease and start trading.",
     },
 
     {
@@ -35,9 +37,9 @@ const Section3 = () => {
     },
 
     {
-      svg: "/svgs/chat.svg",
-      title: "Engaging Live Events",
-      text: "Join us for live video sessions during special occasions, such as flash sales and promotional events.",
+      icon: <LiaShippingFastSolid color="#F79009" />,
+      title: "Free Shipping",
+      text: "Get your free shipping on available products to your location",
     },
   ];
   return (
@@ -51,9 +53,8 @@ const Section3 = () => {
             Empowering Your Business Journey
           </span>
           <small className="text-[#667085] block text-[1rem] mx-auto text-center w-[95%] max-w-[43rem]">
-            Lorem ipsum dolor sit amet consectetur. Maecenas eu cras tortor
-            suspendisse purus cras. In et sed nunc ante proin et urna praesent
-            neque. At sed at in sit. Ornare
+            Scale your local brand faster and better with the right tools and
+            also, buy quality locally-made products at affordable prices.
           </small>
         </div>
 
@@ -61,7 +62,11 @@ const Section3 = () => {
           {firstRow.map((item) => (
             <div className="item_card  md:!w-[40%] w-full" key={item.title}>
               <div className="text-left">
-                <img src={item.svg} alt="" />
+                {item.svg ? (
+                  <img src={item.svg} alt="" />
+                ) : (
+                  <div className="item-container">{item.icon}</div>
+                )}
               </div>
               <h1 className="title font-[600] my-[.8rem] md:text-[1.8rem] text-[1.3rem] text-left">
                 {item.title}
@@ -77,7 +82,13 @@ const Section3 = () => {
           {secondRow.map((item) => (
             <div className="item_card md:!w-[40%] w-full" key={item.title}>
               <div className="text-left">
-                <img src={item.svg} alt="" />
+                {item.svg ? (
+                  <img src={item.svg} alt="" />
+                ) : (
+                  <div className="item-container h-[3rem] w-[3rem] rounded-full bg-[#F79009]/10 flex items-center justify-center">
+                    {item.icon}
+                  </div>
+                )}
               </div>
               <h1 className="title font-[600] my-[.8rem] md:text-[1.8rem] text-[1.3rem] text-left">
                 {item.title}
