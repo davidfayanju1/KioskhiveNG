@@ -8,8 +8,7 @@ const Section2 = () => {
           How it works
         </b>
         <small className="block text-[#757095] text-[1rem] md:w-[30%] w-[90%] max-w-[43rem] mx-auto">
-          Lorem ipsum dolor sit amet consectetur. Semper egestas non enim
-          vulputate aliquet euismod nunc sit.
+          Set up you business page in seconds and get important insights
         </small>
       </div>
 

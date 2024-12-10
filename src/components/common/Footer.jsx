@@ -30,7 +30,7 @@ const Footer = () => {
           +234-816-152-5556
         </a>
         <span className="block text-[#ADB7BC] w-[72%] mb-[.5rem]">
-          Lorem ipsum dolor sit amet consectetur. Sagittis leo nunc
+          The perfect shop on the go for your brand
         </span>
         <a href="mailto:kioskhivewholesales@gmail.com" className="text-white">
           kioskhivewholesales@gmail.com

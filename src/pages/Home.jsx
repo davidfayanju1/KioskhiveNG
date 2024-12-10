@@ -11,22 +11,22 @@ import FadeLayout from "../layout/FadeLayout";
 const Home = () => {
   return (
     <DefaultLayout active={1}>
-      <FadeLayout delay={0.1}>
+      <FadeLayout delay={0.5}>
         <Section1 />
       </FadeLayout>
-      <FadeLayout delay={0.2}>
+      <FadeLayout delay={0.8}>
         <Section2 />
       </FadeLayout>
-      <FadeLayout delay={0.3}>
+      <FadeLayout delay={1.4}>
         <Section3 />
       </FadeLayout>
-      <FadeLayout delay={0.4}>
+      <FadeLayout delay={1.5}>
         <Section4 />
       </FadeLayout>
-      <FadeLayout delay={0.5}>
+      <FadeLayout delay={2.2}>
         <Section5 />
       </FadeLayout>
-      <FadeLayout delay={0.6}>
+      <FadeLayout delay={2.4}>
         <Section6 />
       </FadeLayout>
     </DefaultLayout>
