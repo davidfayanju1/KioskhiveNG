@@ -18,7 +18,7 @@ const Section4 = () => {
   return (
     <section className="section_container md:py-[4rem]">
       <div className="card_container relative mx-auto md:min-h-[35rem] min-h-[45rem] bg-[#248572] md:pt-[1.5rem] pt-[2rem] px-[2rem] md:rounded-[10px] md:w-[90%]">
-        <span className="title block  mb-[.3rem] font-[600] text-white md:text-[2.4rem] text-[1.3rem] text-center">
+        <span className="title block  mb-[.3rem] font-[700] text-white md:text-[2.1rem] text-[1.3rem] text-center">
           Numbers speak louder
         </span>
         <small className="text-center text-[1rem] block mb-[3rem] text-white font-[400]">

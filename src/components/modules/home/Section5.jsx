@@ -4,21 +4,21 @@ const Section5 = () => {
   const customers = [
     {
       img: "/images/Image1.png",
-      text: ` Pellentesque eu nibh eget mauris congue mattis mattis nec tellus.
+      text: `Pellentesque eu nibh eget mauris congue mattis mattis nec tellus.
       Phasellus imperdiet elit eu magna dictum, bibendum cursus velit
       sodales. Donec sed neque eget`,
       name: "Robert Fox",
     },
     {
       img: "/images/Image2.png",
-      text: ` Pellentesque eu nibh eget mauris congue mattis mattis nec tellus.
+      text: `Pellentesque eu nibh eget mauris congue mattis mattis nec tellus.
       Phasellus imperdiet elit eu magna dictum, bibendum cursus velit
       sodales. Donec sed neque eget`,
       name: "Dianne Russell",
     },
     {
       img: "/images/Image3.png",
-      text: ` Pellentesque eu nibh eget mauris congue mattis mattis nec tellus.
+      text: `Pellentesque eu nibh eget mauris congue mattis mattis nec tellus.
       Phasellus imperdiet elit eu magna dictum, bibendum cursus velit
       sodales. Donec sed neque eget`,
       name: "Eleanor Per",
@@ -36,10 +36,10 @@ const Section5 = () => {
       </small>
 
       <div className="text_container text-center mx-auto mt-[1rem]">
-        <span className="block font-[700] md:text-[2.4rem] text-[1.3rem] mb-[1.1rem]">
+        <span className="block font-[700] md:text-[2.1rem] text-[1.3rem] mb-[1.1rem]">
           What are people saying
         </span>
-        <blockquote className="text-[#667085] mx-auto w-[95%] md:text-[1rem] text-[.9rem] text-center block">
+        <blockquote className="text-[#667085] mx-auto w-[95%] max-w-[43rem] md:text-[1rem] text-[.9rem] text-center block">
           Thank you for your trust in Kioskhive! We are grateful for your
           feedback and are committed to providing the best [products/services
           offered]. Read what our clients have to say about their experience

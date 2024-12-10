@@ -19,7 +19,7 @@ const Section6 = () => {
           <img
             src="/images/lady.png"
             alt=""
-            className="w-full md:h-[30rem] h-[20rem] object-cover rounded-[8px]"
+            className="w-full md:h-[30rem] h-[20rem] object-cover rounded-[10px]"
           />
         </figure>
       </div>

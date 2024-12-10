@@ -47,10 +47,10 @@ const Section3 = () => {
           <small className="text-[#F79009] block text-[.8rem] mb-[1rem] font-[600] text-center">
             Features
           </small>
-          <span className="block w-full font-[700] md:text-[2rem] text-[1.33rem] mb-[.6rem] text-[#101828] text-center">
+          <span className="block w-full font-[700] md:text-[2.1rem] text-[1.3rem] mb-[.6rem] text-[#101828] text-center">
             Empowering Your Business Journey
           </span>
-          <small className="font-light text-[#667085] block text-[1rem] mx-auto text-center w-[95%]">
+          <small className="font-light text-[#667085] block text-[1rem] mx-auto text-center w-[95%] max-w-[43rem]">
             Lorem ipsum dolor sit amet consectetur. Maecenas eu cras tortor
             suspendisse purus cras. In et sed nunc ante proin et urna praesent
             neque. At sed at in sit. Ornare
