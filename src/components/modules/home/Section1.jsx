@@ -3,7 +3,7 @@ import Button from "../../common/Button";
 
 const Section1 = () => {
   return (
-    <section className="flex pb-[3rem] md:pt-[1rem] pt-[6rem] bg-[#FFFCF5] md:px-[4rem] px-[1rem] md:flex-row flex-col items-center justify-between">
+    <section className="flex pb-[5rem] md:pt-[1rem] pt-[7rem] bg-[#FFFCF5] md:px-[4rem] px-[1rem] md:flex-row flex-col items-center justify-between">
       <div className="first_container md:w-[50%] w-full">
         <hgroup className="font-[500] text-[#000000] font-aeonik md:text-[3.2vw] text-[1.55rem]">
           Welcome to Kioskhive: Your Gateway to Business Growth
@@ -21,7 +21,7 @@ const Section1 = () => {
           <Button
             name={"Explore Marketplace"}
             className={
-              "!border-solid border-[1px] border-gray-[#F7F7F7] !text-[#606060] !w-full"
+              "!border-solid shadow-lg border-[1px] border-[#F7F7F7] !text-[#606060] !w-full"
             }
           />
         </div>
