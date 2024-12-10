@@ -6,7 +6,7 @@ const DefaultLayout = ({ children, active }) => {
   return (
     <>
       <Nav active={active} />
-      <div className="children-container mt-[5rem]">{children}</div>
+      {children}
       <Footer />
     </>
   );

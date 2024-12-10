@@ -106,7 +106,7 @@ const Nav = ({ active }) => {
   }, [open]);
 
   return (
-    <header className="w-full flex items-center justify-between md:px-[4rem] border-b-[.2px] border-gray-200 px-[1rem] min-h-[5rem] fixed top-0 left-0 z-[500] bg-white bg-opacity-40 backdrop-blur-[10px] shadow-md">
+    <header className="w-full flex items-center justify-between md:px-[4rem] px-[1rem] min-h-[5rem] fixed top-0 left-0 z-[500] bg-[#FFFCF5] bg-opacity-40 backdrop-blur-[10px] shadow-md">
       <div className="title flex items-center justify-center gap-[2rem]">
         <figure className="logo_container h-[2rem] w-[6rem]">
           <img src="/svgs/company.svg" alt="" />
