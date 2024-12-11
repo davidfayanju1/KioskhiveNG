@@ -36,15 +36,15 @@ const Section5 = () => {
       </small>
 
       <div className="text_container text-center mx-auto mt-[1rem]">
-        <span className="block font-[700] md:text-[2.1rem] text-[1.5rem] mb-[1.1rem]">
+        <h1 className="block font-[700] md:text-[2.1rem] text-[1.5rem] mb-[1.1rem]">
           What are people saying
-        </span>
-        <blockquote className="text-[#667085] mx-auto w-[95%] max-w-[43rem] md:text-[1rem] text-[.9rem] text-center block">
+        </h1>
+        <span className="text-[#667085] mx-auto w-[95%] max-w-[43rem] md:text-[1rem] text-[.9rem] text-center block">
           Thank you for your trust in Kioskhive! We are grateful for your
           feedback and are committed to providing the best [products/services
           offered]. Read what our clients have to say about their experience
           with us
-        </blockquote>
+        </span>
       </div>
 
       <div className="slider_components px-[.5rem] my-[2rem] w-full gap-[2rem] flex md:flex-row flex-col items-center justify-center">

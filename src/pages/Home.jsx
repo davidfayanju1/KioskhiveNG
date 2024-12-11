@@ -17,16 +17,16 @@ const Home = () => {
       <FadeLayout delay={0.8}>
         <Section2 />
       </FadeLayout>
-      <FadeLayout delay={1.4}>
+      <FadeLayout delay={1}>
         <Section3 />
       </FadeLayout>
       <FadeLayout delay={1.5}>
         <Section4 />
       </FadeLayout>
-      <FadeLayout delay={2.2}>
+      <FadeLayout delay={1.8}>
         <Section5 />
       </FadeLayout>
-      <FadeLayout delay={2.4}>
+      <FadeLayout delay={2.2}>
         <Section6 />
       </FadeLayout>
     </DefaultLayout>

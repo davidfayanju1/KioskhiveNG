@@ -18,16 +18,16 @@ const Section4 = () => {
   return (
     <section className="section_container md:py-[4rem]">
       <div className="card_container relative mx-auto md:min-h-[35rem] min-h-[45rem] bg-[#248572] md:pt-[1.5rem] pt-[2rem] px-[2rem] md:rounded-[10px] md:w-[90%]">
-        <span className="title block  mb-[.3rem] font-[700] text-white md:text-[2.1rem] text-[1.5rem] text-center">
+        <h1 className="title block  mb-[.3rem] font-[700] text-white md:text-[2.1rem] text-[1.5rem] text-center">
           Numbers speak louder
-        </span>
+        </h1>
         <small className="text-center text-[1rem] block mb-[3rem] text-white font-[400]">
           Showcasing Our Remarkable Progress in Defining Success
         </small>
         <div className="flex-container flex items-start justify-start md:gap-[1rem] gap-[2rem] md:flex-row flex-col">
           {data.map((item) => (
             <div className="item_card">
-              <div className="title font-[600] text-center text-white md:text-[1.8rem] text-[1.3rem] mb-[1rem]">
+              <div className="title font-[600] text-center text-white md:text-[1.8rem] text-[1.3h1 mb-[1rem]">
                 {item.title}
               </div>
               <div className="text text-white font-[400] text-center text-[1rem]">

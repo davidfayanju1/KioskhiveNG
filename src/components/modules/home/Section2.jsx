@@ -4,9 +4,9 @@ const Section2 = () => {
   return (
     <section className=" pb-[6rem] pt-[4rem]">
       <div className="section title md:mb-[5rem] mb-[5rem] text-center">
-        <b className="md:text-[2.1rem] text-[1.5rem] mb-[.9rem] block">
+        <h1 className="md:text-[2.1rem] font-[700] text-[1.5rem] mb-[.9rem] block">
           How it works
-        </b>
+        </h1>
         <small className="block text-[#757095] text-[1rem] md:w-[30%] w-[90%] max-w-[43rem] mx-auto">
           Set up you business page in seconds and get important insights
         </small>
