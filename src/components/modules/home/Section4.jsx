@@ -18,12 +18,14 @@ const Section4 = () => {
   return (
     <section className="section_container md:py-[4rem]">
       <div className="card_container relative mx-auto md:min-h-[35rem] min-h-[45rem] bg-[#248572] md:pt-[1.5rem] pt-[2rem] px-[2rem] md:rounded-[10px] md:w-[90%]">
-        <h1 className="title block  mb-[.3rem] font-[700] text-white md:text-[2.1rem] text-[1.5rem] text-center">
-          Numbers speak louder
-        </h1>
-        <p className="text-center text-[1rem] block mb-[3rem] text-white font-[400]">
-          Showcasing Our Remarkable Progress in Defining Success
-        </p>
+        <header>
+          <h1 className="title block  mb-[.3rem] font-[700] text-white md:text-[2.1rem] text-[1.5rem] text-center">
+            Numbers speak louder
+          </h1>
+          <h2 className="text-center text-[1rem] block mb-[3rem] text-white font-[400]">
+            Showcasing Our Remarkable Progress in Defining Success
+          </h2>
+        </header>
         <div className="flex-container flex items-start justify-start md:gap-[1rem] gap-[2rem] md:flex-row flex-col">
           {data.map((item) => (
             <div className="item_card">

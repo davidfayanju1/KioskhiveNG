@@ -45,18 +45,18 @@ const Section3 = () => {
   return (
     <section className="flex items-center justify-center md:px-[4rem] md:py-[4rem] py-[2rem] px-[1rem] min-h-[40vh] bg-[#FFFCF5]">
       <div className="section_container">
-        <div className="item-container text-center  md:mb-[2rem] mb-[3.5rem]">
+        <header className="item-container text-center  md:mb-[2rem] mb-[3.5rem]">
           <small className="text-[#F79009] block text-[.8rem] mb-[1rem] font-[600] text-center">
             Features
           </small>
           <h1 className="block w-full font-[700] md:text-[2.1rem] text-[1.5rem] mb-[.6rem] text-[#101828] text-center">
             Empowering Your Business Journey
           </h1>
-          <p className="text-[#667085] block text-[1rem] mx-auto text-center w-[95%] max-w-[43rem]">
+          <h2 className="text-[#667085] block text-[1rem] mx-auto text-center w-[95%] max-w-[43rem]">
             Scale your local brand faster and better with the right tools and
             also, buy quality locally-made products at affordable prices.
-          </p>
-        </div>
+          </h2>
+        </header>
 
         <div className="first_flex_container flex items-start w-full justify-center gap-[1.5rem] md:flex-row flex-col">
           {firstRow.map((item) => (

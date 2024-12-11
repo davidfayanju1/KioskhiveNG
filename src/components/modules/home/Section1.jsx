@@ -10,12 +10,12 @@ const Section1 = () => {
             Welcome to Kioskhive: The Perfect Local Online Marketplace For Your
             Brand
           </h1>
-          <p className="text-[#727272] text-[.8rem] my-[1.5rem]">
+          <h2 className="text-[#727272] text-[.8rem] my-[1.5rem]">
             Kioskhive is designed to assist locally emerging and established
             brands, with the right tools to aid in faster scaling and increased
             footprint, while providing quality and afford able products to
             retailers, within an interactive environment.
-          </p>
+          </h2>
         </header>
 
         <div className="button_components flex md:flex-row flex-col items-center justify-start gap-[1rem]">

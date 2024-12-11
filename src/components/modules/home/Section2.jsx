@@ -3,14 +3,14 @@ import React from "react";
 const Section2 = () => {
   return (
     <section className=" pb-[6rem] pt-[4rem]">
-      <div className="section title md:mb-[5rem] mb-[5rem] text-center">
+      <header className="section title md:mb-[5rem] mb-[5rem] text-center">
         <h1 className="md:text-[2.1rem] font-[700] text-[1.5rem] mb-[.9rem] block">
           How it works
         </h1>
-        <p className="block text-[#757095] text-[1rem] md:w-[30%] w-[90%] max-w-[43rem] mx-auto">
+        <h2 className="block text-[#757095] text-[1rem] md:w-[30%] w-[90%] max-w-[43rem] mx-auto">
           Set up you business page in seconds and get important insights
-        </p>
-      </div>
+        </h2>
+      </header>
 
       <div className="item_container flex md:flex-row flex-col md:gap-0 gap-[5rem] items-center justify-center">
         <div className="card w-[90%] md:w-[22rem]">
