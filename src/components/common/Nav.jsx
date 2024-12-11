@@ -121,7 +121,7 @@ const Nav = ({ active }) => {
           {links.map((item, i) => (
             <div
               key={i}
-              className={`${
+              className={`cursor-pointer ${
                 active === item.active ? "text-[#FC9A30]" : "text-[#727272]"
               }`}
               onClick={() => navigate(item.url)}
@@ -147,7 +147,7 @@ const Nav = ({ active }) => {
               {links.map((item, i) => (
                 <div
                   key={i}
-                  className={`${
+                  className={`cursor-pointer ${
                     active === item.active
                       ? "bg-[#FC9A30] rounded-full py-[.8rem] font-[500] text-white flex justify-center"
                       : "text-[#727272]"

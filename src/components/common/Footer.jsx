@@ -18,10 +18,10 @@ const Footer = () => {
   return (
     <footer className="bg-[#001037] relative min-h-[40vh] w-full md:px-[6rem] px-[1.5rem] py-[2.5rem] flex items-center justify-between md:flex-row flex-col flex-wrap gap-[4rem]">
       {/* image section */}
-      <div className="footer_svg absolute z-[200] top-0 left-0 md:block hidden">
+      <div className="footer_svg absolute z-10 top-0 left-0 md:block hidden">
         <img src="/svgs/footer.svg" alt="" />
       </div>
-      <div className="first_container z-[300]">
+      <div className="first_container z-20">
         <div className="logo_section mb-[1rem]">
           <img src="/svgs/companyII.svg" alt="" />
         </div>
@@ -58,21 +58,21 @@ const Footer = () => {
 
       <div className="line w-full bg-[#333333] h-[.1rem]"></div>
       <div className="third_container mx-auto md:flex-row flex-col md:w-[90%] w-full flex items-center gap-[1rem] justify-between">
-        <span className="text block text-[#808080] w-full text-[.9rem] text-center mb-2">
+        <p className="text block text-[#808080] w-full text-[.9rem] text-center mb-2">
           Kioskhive eCommerce © 2024. All Rights Reserved
-        </span>
+        </p>
         <div className="flex items-center md:justify-center justify-between gap-4 w-full">
           <figure className="facebook flex items-center justify-center bg-[#FC9A30] h-[2rem] w-[2rem] rounded-full">
-            <img src="/svgs/facebook.svg" alt="" />
+            <img src="/svgs/facebook.svg" alt="social links" />
           </figure>
           <figure>
-            <img src="/svgs/twitter.svg" alt="" />
+            <img src="/svgs/twitter.svg" alt="social links" />
           </figure>
           <figure>
-            <img src="/svgs/pinterest.svg" alt="" />
+            <img src="/svgs/pinterest.svg" alt="social links" />
           </figure>
           <figure>
-            <img src="/svgs/instagram.svg" alt="" />
+            <img src="/svgs/instagram.svg" alt="social links" />
           </figure>
         </div>
       </div>
