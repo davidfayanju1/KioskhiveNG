@@ -7,9 +7,9 @@ const Section2 = () => {
         <h1 className="md:text-[2.1rem] font-[700] text-[1.5rem] mb-[.9rem] block">
           How it works
         </h1>
-        <small className="block text-[#757095] text-[1rem] md:w-[30%] w-[90%] max-w-[43rem] mx-auto">
+        <p className="block text-[#757095] text-[1rem] md:w-[30%] w-[90%] max-w-[43rem] mx-auto">
           Set up you business page in seconds and get important insights
-        </small>
+        </p>
       </div>
 
       <div className="item_container flex md:flex-row flex-col md:gap-0 gap-[5rem] items-center justify-center">
@@ -18,14 +18,14 @@ const Section2 = () => {
             <span className="flex shadow-xl absolute top-0 left-[-10%] items-center justify-center w-[1.9rem] h-[1.9rem] rounded-full text-[.9rem] font-[500] bg-white">
               1
             </span>
-            <img src="/svgs/register.svg" alt="" className="mx-auto" />
+            <img src="/svgs/register.svg" alt="register" className="mx-auto" />
           </figure>
-          <div className="title md:my-[1rem] font-[600] text-black md:text-[1.8rem] text-[1.3rem] text-center">
+          <h2 className="title md:my-[1rem] font-[600] text-black md:text-[1.8rem] text-[1.3rem] text-center">
             Register
-          </div>
-          <span className="block text-[#757095] text-center text-[1rem]">
+          </h2>
+          <p className="block text-[#757095] text-center text-[1rem]">
             Few details required for registration
-          </span>
+          </p>
         </div>
 
         <div className="down-wave md:block hidden">
@@ -37,14 +37,18 @@ const Section2 = () => {
             <span className="flex absolute top-0 left-[-10%] items-center bg-[#F6F6F7] justify-center w-[1.9rem] h-[1.9rem] rounded-full text-[.9rem] font-[500]">
               2
             </span>
-            <img src="/svgs/setup.svg" alt="" className="mx-auto" />
+            <img
+              src="/svgs/setup.svg"
+              alt="setup account"
+              className="mx-auto"
+            />
           </figure>
-          <div className="title my-[1rem] font-[600] text-black md:text-[1.8rem] text-[1.3rem] text-center">
+          <h2 className="title my-[1rem] font-[600] text-black md:text-[1.8rem] text-[1.3rem] text-center">
             Complete Setup
-          </div>
-          <span className="block text-[#757095] text-center text-[1rem]">
+          </h2>
+          <p className="block text-[#757095] text-center text-[1rem]">
             Kiosk is ready almost immediately
-          </span>
+          </p>
         </div>
 
         <div className="up-wave md:block hidden">
@@ -58,12 +62,12 @@ const Section2 = () => {
             </span>
             <img src="/svgs/utilize.svg" alt="" className="mx-auto" />
           </figure>
-          <div className="title my-[1rem] font-[600] text-black md:text-[1.8rem] text-[1.3rem] text-center">
+          <h2 className="title my-[1rem] font-[600] text-black md:text-[1.8rem] text-[1.3rem] text-center">
             Utilize Platform
-          </div>
-          <span className="block text-[#757095] text-center text-[1rem]">
+          </h2>
+          <p className="block text-[#757095] text-center text-[1rem]">
             Shop and sell quality local products
-          </span>
+          </p>
         </div>
       </div>
     </section>

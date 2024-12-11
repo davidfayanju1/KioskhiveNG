@@ -52,10 +52,10 @@ const Section3 = () => {
           <h1 className="block w-full font-[700] md:text-[2.1rem] text-[1.5rem] mb-[.6rem] text-[#101828] text-center">
             Empowering Your Business Journey
           </h1>
-          <small className="text-[#667085] block text-[1rem] mx-auto text-center w-[95%] max-w-[43rem]">
+          <p className="text-[#667085] block text-[1rem] mx-auto text-center w-[95%] max-w-[43rem]">
             Scale your local brand faster and better with the right tools and
             also, buy quality locally-made products at affordable prices.
-          </small>
+          </p>
         </div>
 
         <div className="first_flex_container flex items-start w-full justify-center gap-[1.5rem] md:flex-row flex-col">
@@ -68,9 +68,9 @@ const Section3 = () => {
                   <div className="item-container">{item.icon}</div>
                 )}
               </div>
-              <h1 className="title font-[600] my-[.8rem] md:text-[1.8rem] text-[1.3rem] text-left">
+              <h2 className="title font-[600] my-[.8rem] md:text-[1.8rem] text-[1.3rem] text-left">
                 {item.title}
-              </h1>
+              </h2>
               <p className="text-left text-[#667085] text-[1rem]">
                 {item.text}
               </p>
@@ -90,9 +90,9 @@ const Section3 = () => {
                   </div>
                 )}
               </div>
-              <h1 className="title font-[600] my-[.8rem] md:text-[1.8rem] text-[1.3rem] text-left">
+              <h2 className="title font-[600] my-[.8rem] md:text-[1.8rem] text-[1.3rem] text-left">
                 {item.title}
-              </h1>
+              </h2>
 
               <p className="text-left text-[#667085] text-[1rem]">
                 {item.text}
