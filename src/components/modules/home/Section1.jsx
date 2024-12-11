@@ -4,8 +4,8 @@ import Button from "../../common/Button";
 const Section1 = () => {
   return (
     <section className="flex pb-[5rem] md:pt-[1rem] pt-[7rem] bg-[#FFFCF5] md:px-[4rem] px-[1rem] md:flex-row flex-col items-center justify-between">
-      <div className="first_container md:w-[50%] w-full">
-        <header>
+      <header className="first_container md:w-[50%] w-full">
+        <div>
           <h1 className="font-[500] text-[#000000] font-aeonik md:text-[3.2vw] text-[1.55rem]">
             Welcome to Kioskhive: The Perfect Local Online Marketplace For Your
             Brand
@@ -16,7 +16,7 @@ const Section1 = () => {
             footprint, while providing quality and afford able products to
             retailers, within an interactive environment.
           </h2>
-        </header>
+        </div>
 
         <div className="button_components flex md:flex-row flex-col items-center justify-start gap-[1rem]">
           <Button name={"Get Started"} className={"bg-[#FC9A30] !w-full"} />
@@ -27,7 +27,7 @@ const Section1 = () => {
             }
           />
         </div>
-      </div>
+      </header>
       <figure className="relative md:w-[50%]">
         <img
           src="/svgs/hero.svg"
