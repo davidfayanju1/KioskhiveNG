@@ -1,5 +1,5 @@
 import React from "react";
-import { productModel } from "../../../data/ProductData";
+import { homeNoutdoor, productModel } from "../../../data/ProductData";
 import { Link } from "react-router-dom";
 
 const MarketPlaceComp = () => {
@@ -74,7 +74,7 @@ const MarketPlaceComp = () => {
         <div className="flex items-center justify-center gap-8 flex-wrap flex-col md:flex-row">
           {productModel.map((item) => (
             <div
-              className="card rounded-[8px] md:max-w-[15rem] w-[80%] h-[19rem] border-solid border-[1px]"
+              className="card rounded-[8px] md:max-w-[15rem] w-[95%] h-[19rem] border-solid border-[1px]"
               key={item.name}
             >
               <img src={item.img} alt="" className="h-[50%] mx-auto" />
@@ -89,7 +89,89 @@ const MarketPlaceComp = () => {
         </div>
       </section>
 
-      <section className="product_card"></section>
+      <section className="product_card my-[5rem] min-h-[10rem] rounded-[10px] overflow-hidden">
+        <div className="first_section flex items-center justify-center flex-wrap">
+          <img
+            src="/images/homecategory.png"
+            alt=""
+            className="h-[20rem] object-cover xl:w-[20%] w-full"
+          />
+          <div className="image-mega-container">
+            <div className="first_section flex items-center flex-wrap">
+              {homeNoutdoor.map((item) => (
+                <div className="product_card px-8 md:w-[16rem] w-full pt-9 h-[10rem] border-solid border-[1px] border-gray-300 flex items-center justify-between">
+                  <div className="text-section">
+                    <h2 className="font-bold">{item.name}</h2>
+                    <small className="text-[#8B96A5] text-[.9rem]">
+                      From
+                      <br />
+                      {item.price}
+                    </small>
+                  </div>
+                  <img src={item.image} alt="" />
+                </div>
+              ))}
+            </div>
+            <div className="first_section flex items-center flex-wrap">
+              {homeNoutdoor.map((item) => (
+                <div className="product_card px-8 pt-9 md:w-[16rem] w-full border-solid h-[10rem] border-[1px] border-gray-300 flex items-center justify-between">
+                  <div className="text-section">
+                    <h2 className="font-bold">{item.name}</h2>
+                    <small className="text-[#8B96A5] text-[.9rem]">
+                      From
+                      <br />
+                      {item.price}
+                    </small>
+                  </div>
+                  <img src={item.image} alt="" />
+                </div>
+              ))}
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section className="product_card my-[5rem] min-h-[10rem] rounded-[10px] overflow-hidden">
+        <div className="first_section flex items-center justify-center flex-wrap">
+          <img
+            src="/images/products/cure.png"
+            alt=""
+            className="h-[20rem] object-cover xl:w-[20%] w-full"
+          />
+          <div className="image-mega-container">
+            <div className="first_section flex items-center flex-wrap">
+              {homeNoutdoor.map((item) => (
+                <div className="product_card px-8 md:w-[16rem] w-full pt-9 h-[10rem] border-solid border-[1px] border-gray-300 flex items-center justify-between">
+                  <div className="text-section">
+                    <h2 className="font-bold">{item.name}</h2>
+                    <small className="text-[#8B96A5] text-[.9rem]">
+                      From
+                      <br />
+                      {item.price}
+                    </small>
+                  </div>
+                  <img src={item.image} alt="" />
+                </div>
+              ))}
+            </div>
+            <div className="first_section flex items-center flex-wrap">
+              {homeNoutdoor.map((item) => (
+                <div className="product_card px-8 pt-9 md:w-[16rem] w-full border-solid h-[10rem] border-[1px] border-gray-300 flex items-center justify-between">
+                  <div className="text-section">
+                    <h2 className="font-bold">{item.name}</h2>
+                    <small className="text-[#8B96A5] text-[.9rem]">
+                      From
+                      <br />
+                      {item.price}
+                    </small>
+                  </div>
+                  <img src={item.image} alt="" />
+                </div>
+              ))}
+            </div>
+          </div>
+        </div>
+      </section>
     </div>
   );
 };

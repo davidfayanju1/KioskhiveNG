@@ -30,3 +30,26 @@ export const productModel = [
     prevPrice: "$350.50",
   },
 ];
+
+export const homeNoutdoor = [
+  {
+    name: "Soft Chairs",
+    price: "USD 19",
+    image: "/images/products/chair.png",
+  },
+  {
+    name: "Home Lamp",
+    price: "USD 19",
+    image: "/images/products/lamp.png",
+  },
+  {
+    name: "Soft Chairs",
+    price: "USD 19",
+    image: "/images/products/chair.png",
+  },
+  {
+    name: "Soft Chairs",
+    price: "USD 19",
+    image: "/images/products/electric.png",
+  },
+];
