@@ -3,95 +3,33 @@ import { useState } from "react";
 
 const Header = () => {
   const icons = [
-    {
-      src: "/svgs/X.svg",
-    },
-
-    {
-      src: "/svgs/fb-white.svg",
-    },
-
-    {
-      src: "/svgs/pinterest-white.svg   ",
-    },
-
-    {
-      src: "/svgs/discord.svg",
-    },
-
-    {
-      src: "/svgs/youtube.svg",
-    },
-
-    {
-      src: "/svgs/insta.svg",
-    },
+    { src: "/svgs/X.svg" },
+    { src: "/svgs/fb-white.svg" },
+    { src: "/svgs/pinterest-white.svg" },
+    { src: "/svgs/discord.svg" },
+    { src: "/svgs/youtube.svg" },
+    { src: "/svgs/insta.svg" },
   ];
 
   const categories = [
-    {
-      name: "All Category",
-      url: "/all_category",
-    },
-    {
-      name: "Computers & Laptop",
-      url: "/computer_laptop",
-    },
-    {
-      name: "Computers & Accessories",
-      url: "/computer-accessoriess",
-    },
-    {
-      name: "Smart Phone",
-      url: "/smar-phone",
-    },
-    {
-      name: "Headphone",
-      url: "/headphone",
-    },
-    {
-      name: "Mobile Accessories",
-      url: "/mobile-accessories",
-    },
-    {
-      name: "Gaming Console",
-      url: "/gaming_console",
-    },
-    {
-      name: "Camera & Photo",
-      url: "/camera_photo",
-    },
-    {
-      name: "TV & Home Appliances",
-      url: "/tv_home_appliances",
-    },
-    {
-      name: "Watch & Accessories",
-      url: "/watch_accessories",
-    },
-    {
-      name: "GPS & Navigation",
-      url: "/gps_navigation",
-    },
-    {
-      name: "Wearable Technology",
-      url: "warable_tech",
-    },
+    { name: "All Category", url: "/all_category" },
+    { name: "Computers & Laptop", url: "/computer_laptop" },
+    { name: "Computers & Accessories", url: "/computer-accessoriess" },
+    { name: "Smart Phone", url: "/smar-phone" },
+    { name: "Headphone", url: "/headphone" },
+    { name: "Mobile Accessories", url: "/mobile-accessories" },
+    { name: "Gaming Console", url: "/gaming_console" },
+    { name: "Camera & Photo", url: "/camera_photo" },
+    { name: "TV & Home Appliances", url: "/tv_home_appliances" },
+    { name: "Watch & Accessories", url: "/watch_accessories" },
+    { name: "GPS & Navigation", url: "/gps_navigation" },
+    { name: "Wearable Technology", url: "warable_tech" },
   ];
 
   const actions = [
-    {
-      name: "Track Orders",
-      icon: "/svgs/location.svg",
-    },
-    {
-      name: "Customer",
-      icon: "/svgs/support.svg",
-    },
-    {
-      name: "Need Help",
-      icon: "/svgs/tool.svg",
-    },
+    { name: "Track Orders", icon: "/svgs/location.svg" },
+    { name: "Customer", icon: "/svgs/support.svg" },
+    { name: "Need Help", icon: "/svgs/tool.svg" },
   ];
 
   const [input, setInput] = useState("");
@@ -102,13 +40,13 @@ const Header = () => {
         <h1 className="text-white md:text-[1rem] text-[.8rem]">
           Welcome to kioskhive ecommerce store
         </h1>
-        <div className="links_container flex items-center">
+        <div className="links_container flex items-center justify-center">
           <span className="block text-white w-full md:text-[1rem] text-[.8rem]">
             Follow us:
           </span>
           <div className="flex items-center md:justify-center justify-between gap-2 w-full">
             {icons.map(({ src }) => (
-              <figure>
+              <figure key={src}>
                 <img src={src} alt="" />
               </figure>
             ))}
@@ -118,7 +56,7 @@ const Header = () => {
 
       <section className="main_header gap-2 bg-[#556AFF] md:px-[4rem] px-[1rem] py-3 flex items-center justify-between">
         <figure>
-          <img src="/svgs/Logo.svg" alt="" />
+          <img src="/svgs/Logo.svg" alt="Company Logo" />
         </figure>
 
         <div className="input_container hidden md:flex items-center justify-between bg-white py-2 rounded-full w-[50%] px-5">
@@ -131,19 +69,19 @@ const Header = () => {
           />
 
           <figure className="icon">
-            <img src="/svgs/search.svg" alt="" />
+            <img src="/svgs/search.svg" alt="Search Icon" />
           </figure>
         </div>
 
         <div className="icon_container flex items-center justify-center gap-2">
           <button className="outline-none border-none">
-            <img src="/svgs/cart.svg" alt="" />
+            <img src="/svgs/cart.svg" alt="Cart" />
           </button>
           <button className="outline-none border-none md:block hidden">
-            <img src="/svgs/like.svg" alt="" />
+            <img src="/svgs/like.svg" alt="Like" />
           </button>
           <button className="outline-none border-none">
-            <img src="/svgs/user.svg" alt="" />
+            <img src="/svgs/user.svg" alt="User" />
           </button>
         </div>
       </section>
@@ -152,13 +90,14 @@ const Header = () => {
         <div className="category_section self-center flex items-center justify-center">
           <select
             name="category"
-            id=""
+            id="category-select"
             className="min-w-[4rem] custom-select px-2 h-full text-[.9rem] rounded-[3px]"
           >
             {categories.map((item) => (
               <option
+                key={item.name}
                 value={item.name}
-                className="text-[.9rem] overflow-y-scroll"
+                className="text-[.9rem]"
               >
                 {item.name}
               </option>
@@ -170,7 +109,7 @@ const Header = () => {
                 className="card-container flex items-center gap-2"
                 key={item.name}
               >
-                <img src={item.icon} alt="" />
+                <img src={item.icon} alt={item.name} />
                 {item.name}
               </div>
             ))}
@@ -181,7 +120,7 @@ const Header = () => {
             href="tel:+234-816-152-5556"
             className="flex items-center justify-center text-[.9rem]"
           >
-            <img src="/svgs/phone.svg" alt="" />
+            <img src="/svgs/phone.svg" alt="Phone" />
             +234-816-152-5556
           </a>
         </div>

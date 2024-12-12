@@ -6,7 +6,7 @@ const MarketPlaceLayout = ({ children }) => {
   return (
     <div className="page_container">
       <Header />
-      {children}
+      <div className="children_container mt-[13.5rem]">{children}</div>
       <Footer />
     </div>
   );
