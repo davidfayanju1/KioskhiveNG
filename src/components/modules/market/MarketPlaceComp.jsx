@@ -51,8 +51,12 @@ const MarketPlaceComp = () => {
           >
             <img src={item.icon} alt="" className="self-start" />
             <div className="texts">
-              <span className="block font-bold text-black">{item.name}</span>
-              <small className="light text-gray-500">{item.subText}</small>
+              <span className="block font-bold text-black gilroy-bold">
+                {item.name}
+              </span>
+              <small className="light text-gray-500 gilroy">
+                {item.subText}
+              </small>
             </div>
           </div>
         ))}
@@ -61,10 +65,12 @@ const MarketPlaceComp = () => {
       <section className="bestdeal">
         <div className="item_flex flex mb-7 items-center justify-between">
           <div className="title_container flex items-center">
-            <span className="block font-bold text-[1.5rem]">Best Deals</span>
+            <span className="block font-bold gilroy-bold text-[1.5rem]">
+              Best Deals
+            </span>
           </div>
           <div className="all-product-link flex items-center gap-1 justify-center">
-            <Link to={"/products/all"} className="block text-[#FC9A30]">
+            <Link to={"/products/all"} className="block gilroy text-[#FC9A30]">
               Browse all products
             </Link>
             <img src="/svgs/right-arrow.svg" alt="" />
@@ -79,8 +85,8 @@ const MarketPlaceComp = () => {
             >
               <img src={item.img} alt="" className="h-[50%] mx-auto" />
               <div className="text_container px-2">
-                <h1 className="mb-5 truncate">{item.name}</h1>
-                <small className="block font-bold text-[#FC9A30]">
+                <h1 className="mb-5 truncate gilroy">{item.name}</h1>
+                <small className="block gilroy font-bold text-[#FC9A30]">
                   {item.price}
                 </small>
               </div>
@@ -101,8 +107,8 @@ const MarketPlaceComp = () => {
               {homeNoutdoor.map((item) => (
                 <div className="product_card px-8 md:w-[16rem] w-full pt-9 h-[10rem] border-solid border-[1px] border-gray-300 flex items-center justify-between">
                   <div className="text-section">
-                    <h2 className="font-bold">{item.name}</h2>
-                    <small className="text-[#8B96A5] text-[.9rem]">
+                    <h2 className="font-bold gilroy">{item.name}</h2>
+                    <small className="text-[#8B96A5] gilroy text-[.9rem]">
                       From
                       <br />
                       {item.price}
@@ -116,8 +122,8 @@ const MarketPlaceComp = () => {
               {homeNoutdoor.map((item) => (
                 <div className="product_card px-8 pt-9 md:w-[16rem] w-full border-solid h-[10rem] border-[1px] border-gray-300 flex items-center justify-between">
                   <div className="text-section">
-                    <h2 className="font-bold">{item.name}</h2>
-                    <small className="text-[#8B96A5] text-[.9rem]">
+                    <h2 className="font-bold gilroy">{item.name}</h2>
+                    <small className="text-[#8B96A5] gilroy text-[.9rem]">
                       From
                       <br />
                       {item.price}
@@ -143,8 +149,8 @@ const MarketPlaceComp = () => {
               {homeNoutdoor.map((item) => (
                 <div className="product_card px-8 md:w-[16rem] w-full pt-9 h-[10rem] border-solid border-[1px] border-gray-300 flex items-center justify-between">
                   <div className="text-section">
-                    <h2 className="font-bold">{item.name}</h2>
-                    <small className="text-[#8B96A5] text-[.9rem]">
+                    <h2 className="font-bold gilroy">{item.name}</h2>
+                    <small className="text-[#8B96A5] gilroy text-[.9rem]">
                       From
                       <br />
                       {item.price}
@@ -158,8 +164,8 @@ const MarketPlaceComp = () => {
               {homeNoutdoor.map((item) => (
                 <div className="product_card px-8 pt-9 md:w-[16rem] w-full border-solid h-[10rem] border-[1px] border-gray-300 flex items-center justify-between">
                   <div className="text-section">
-                    <h2 className="font-bold">{item.name}</h2>
-                    <small className="text-[#8B96A5] text-[.9rem]">
+                    <h2 className="font-bold gilroy">{item.name}</h2>
+                    <small className="text-[#8B96A5] gilroy text-[.9rem]">
                       From
                       <br />
                       {item.price}
@@ -171,6 +177,10 @@ const MarketPlaceComp = () => {
             </div>
           </div>
         </div>
+      </section>
+
+      <section className="recommended min-h-[20rem]">
+        <h2 className="text-black gilroy-bold">Recommended Items</h2>
       </section>
     </div>
   );

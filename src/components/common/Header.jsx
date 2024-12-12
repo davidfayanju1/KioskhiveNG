@@ -37,11 +37,11 @@ const Header = () => {
   return (
     <header className="fixed top-0 left-0 w-full z-50">
       <section className="header_container md:px-[4rem] px-[1rem] border-b-[1px] py-3 border-white bg-[#556AFF] flex items-center md:justify-between justify-center gap-2 flex-wrap">
-        <h1 className="text-white md:text-[1rem] text-[.8rem]">
+        <h1 className="text-white gilroy md:text-[1rem] text-[.8rem]">
           Welcome to kioskhive ecommerce store
         </h1>
         <div className="links_container flex items-center justify-center">
-          <span className="block text-white w-full md:text-[1rem] text-[.8rem]">
+          <span className="block gilroy text-white w-full md:text-[1rem] text-[.8rem]">
             Follow us:
           </span>
           <div className="flex items-center md:justify-center justify-between gap-2 w-full">
@@ -63,7 +63,7 @@ const Header = () => {
           <input
             type="text"
             placeholder="Search For anything..."
-            className="outline-none border-none w-full placeholder:text-[#77878F] placeholder:text-[14px] text-[16px]"
+            className="outline-none font-gilroy border-none w-full placeholder:text-[#77878F] placeholder:text-[14px] text-[16px]"
             value={input}
             onChange={(e) => setInput(e.target.value)}
           />
@@ -91,7 +91,7 @@ const Header = () => {
           <select
             name="category"
             id="category-select"
-            className="min-w-[4rem] custom-select px-2 h-full text-[.9rem] rounded-[3px]"
+            className="min-w-[4rem] gilroy custom-select px-2 h-full text-[.9rem] rounded-[3px]"
           >
             {categories.map((item) => (
               <option
@@ -118,7 +118,7 @@ const Header = () => {
         <div className="number_container">
           <a
             href="tel:+234-816-152-5556"
-            className="flex items-center justify-center text-[.9rem]"
+            className="flex items-center gilroy justify-center text-[.9rem]"
           >
             <img src="/svgs/phone.svg" alt="Phone" />
             +234-816-152-5556
