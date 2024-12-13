@@ -134,7 +134,7 @@ const MarketPlaceComp = () => {
             />
 
             <div className="text_container absolute top-[1rem] left-[1rem]">
-              <span className="block w-[90%] md:text-[1.6rem] text-[1.2rem] gilroy-semibold font-bold text-[#1C1C1C]">
+              <span className="block w-[90%] mb-5 md:text-[1.6rem] text-[1.2rem] gilroy-semibold font-bold text-[#1C1C1C]">
                 Home and outdoor
               </span>
 
@@ -188,7 +188,7 @@ const MarketPlaceComp = () => {
             />
 
             <div className="text_container absolute top-[1rem] left-[1rem]">
-              <span className="block w-[90%] md:text-[1.6rem] text-[1.2rem] gilroy-semibold font-bold text-[#1C1C1C]">
+              <span className="block w-[90%] mb-5 md:text-[1.6rem] text-[1.2rem] gilroy-semibold font-bold text-[#1C1C1C]">
                 Consumer electronics and gadgets
               </span>
 
