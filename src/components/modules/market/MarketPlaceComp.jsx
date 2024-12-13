@@ -183,9 +183,27 @@ const MarketPlaceComp = () => {
         </div>
       </section>
 
-      <section className="recommended min-h-[20rem]">
+      <section className="recommended min-h-[20rem] mb-[3rem]">
         <h2 className="text-black gilroy-bold mb-9">Recommended Items</h2>
         <div className="card-container flex-wrap md:flex-row flex-col flex items-center justify-center gap-3">
+          {reccomended.map((item) => (
+            <div
+              key={item.price}
+              className="card md:h-[20rem] pt-[1rem] md:w-[45%] md:max-w-[15rem] w-full border-solid border-[1px] border-[#acacac] rounded-[6px]"
+            >
+              <img src={item.img} alt="" className="h-[60%] pb-4 mx-auto" />
+              <div className="text_container p-3 ">
+                <span className="block gilroy font-bold text-[.9rem]">
+                  {item.price}
+                </span>
+                <small className="block truncate gilroy text-gray-300">
+                  {item.name}
+                </small>
+              </div>
+            </div>
+          ))}
+        </div>
+        <div className="card-container mt-9 flex-wrap md:flex-row flex-col flex items-center justify-center gap-3">
           {reccomended.map((item) => (
             <div
               key={item.price}
