@@ -1,5 +1,6 @@
 import React from "react";
 import { useState } from "react";
+import { useNavigate } from "react-router-dom";
 
 const Header = () => {
   const icons = [
@@ -34,6 +35,8 @@ const Header = () => {
 
   const [input, setInput] = useState("");
 
+  const navigate = useNavigate();
+
   return (
     <header className="fixed top-0 left-0 w-full z-50">
       <section className="header_container md:px-[4rem] px-[1rem] border-b-[1px] py-3 border-white bg-[#556AFF] flex items-center md:justify-between justify-center gap-2 flex-wrap">
@@ -55,7 +58,7 @@ const Header = () => {
       </section>
 
       <section className="main_header gap-2 bg-[#556AFF] md:px-[4rem] px-[1rem] py-3 flex items-center justify-between">
-        <figure>
+        <figure onClick={() => Navigate("/")}>
           <img src="/svgs/Logo.svg" alt="Company Logo" />
         </figure>
 
