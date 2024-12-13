@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { useNavigate } from "react-router-dom";
+import { useLocation, useNavigate } from "react-router-dom";
 import { AnimatePresence, motion } from "framer-motion";
 import Button from "./Button";
 import { useEffect } from "react";
@@ -103,8 +103,10 @@ const Nav = ({ active }) => {
     transition: { duration: 0.5 },
   };
 
+  const location = useLocation();
+
   useEffect(() => {
-    if (!open) {
+    if (!open && location.pathname === "/") {
       document.body.classList.add("no-scroll");
     } else {
       document.body.classList.remove("no-scroll");

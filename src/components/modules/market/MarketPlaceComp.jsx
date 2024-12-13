@@ -45,7 +45,7 @@ const MarketPlaceComp = () => {
             className="object-cover w-full h-full rounded-[6px]"
           />
 
-          <div className="text_container w-full absolute top-[5rem] md:left-[0rem] left-[0rem]">
+          <div className="text_container w-full absolute md:top-[5rem] top-[1rem] md:left-[0rem] left-[0rem]">
             <h1 className="gilroy text-white text-center">
               Welcome to Kioskhive
             </h1>
