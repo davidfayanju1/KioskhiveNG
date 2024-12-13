@@ -1,7 +1,7 @@
 import { clamp } from "framer-motion";
 import React from "react";
 
-const Button = ({ name, width, height, className, onPress }) => {
+const Button = ({ name, className, onPress }) => {
   return (
     <button
       onClick={onPress}

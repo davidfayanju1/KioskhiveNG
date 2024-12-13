@@ -225,8 +225,6 @@ const MarketPlaceComp = () => {
       </section>
 
       <Section5 />
-
-      <section className=" min-h-[20rem] bg-[#E6E6E6] w-full"></section>
     </div>
   );
 };
