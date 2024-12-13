@@ -233,7 +233,9 @@ const MarketPlaceComp = () => {
       </section>
 
       <section className="recommended min-h-[20rem] mb-[3rem]">
-        <h2 className="text-black gilroy-bold mb-9">Recommended Items</h2>
+        <h2 className="text-black font-bold gilroy-bold text-[1.5rem] mb-9">
+          Recommended Items
+        </h2>
         <div className="card-container flex-wrap md:flex-row flex-col flex items-center justify-center gap-3">
           {reccomended.map((item) => (
             <div

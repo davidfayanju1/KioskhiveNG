@@ -31,7 +31,7 @@ const MarketPlaceLayout = ({ children }) => {
           <Button name={"Subscribe"} className="bg-[#FC9A30]" />
         </div>
 
-        <div className="links_container flex items-center md:gap-5">
+        <div className="links_container flex items-center md:gap-5 gap-9">
           <FaFacebookF />
           <BsTwitterX />
           <FaPinterestP />

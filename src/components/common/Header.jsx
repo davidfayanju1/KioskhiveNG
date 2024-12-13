@@ -94,19 +94,19 @@ const Header = () => {
           <select
             name="category"
             id="category-select"
-            className="min-w-[4rem] gilroy custom-select px-2 h-full text-[.9rem] rounded-[3px]"
+            className="min-w-[4rem] gilroy custom-select px-2 h-full text-[.8rem] rounded-[3px]"
           >
             {categories.map((item) => (
               <option
                 key={item.name}
                 value={item.name}
-                className="text-[.9rem]"
+                className="text-[.8rem]"
               >
                 {item.name}
               </option>
             ))}
           </select>
-          <div className="options-container md:flex items-center ml-5 hidden">
+          <div className="options-container md:flex items-center gap-6 ml-5 hidden">
             {actions.map((item) => (
               <div
                 className="card-container flex items-center gap-2"
@@ -121,7 +121,7 @@ const Header = () => {
         <div className="number_container">
           <a
             href="tel:+234-816-152-5556"
-            className="flex items-center gilroy justify-center text-[.9rem]"
+            className="flex items-center gilroy justify-center md:text-[.9rem] text-[.8rem]"
           >
             <img src="/svgs/phone.svg" alt="Phone" />
             +234-816-152-5556
