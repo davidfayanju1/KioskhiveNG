@@ -14,7 +14,7 @@ const MarketPlaceLayout = ({ children }) => {
       <div className="children_container mt-[13.5rem]">{children}</div>
       <div className="item_container bg-[#E6E6E6] md:px-[4rem] px-[1rem] w-full gap-3 py-[2rem] flex items-center md:justify-between flex-wrap">
         <div className="first_section">
-          <h3 className="md:gilroy-bold gilroy font-[700] text-black md:text-[1.5rem]">
+          <h3 className="md:gilroy-bold gilroy font-[700] text-black md:text-[1.5rem] text-[1rem]">
             Subscribe our Newsletter
           </h3>
           <small className="block text-[#999999]">
@@ -31,7 +31,7 @@ const MarketPlaceLayout = ({ children }) => {
           <Button name={"Subscribe"} className="bg-[#FC9A30]" />
         </div>
 
-        <div className="links_container flex items-center gap-5">
+        <div className="links_container flex items-center md:gap-5">
           <FaFacebookF />
           <BsTwitterX />
           <FaPinterestP />

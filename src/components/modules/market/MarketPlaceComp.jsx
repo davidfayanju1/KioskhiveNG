@@ -6,6 +6,7 @@ import {
 } from "../../../data/ProductData";
 import { Link } from "react-router-dom";
 import Section5 from "../home/Section5";
+import Button from "../../common/Button";
 
 const MarketPlaceComp = () => {
   const items = [
@@ -37,11 +38,31 @@ const MarketPlaceComp = () => {
   return (
     <div className="min-h-screen md:px-[4rem] px-[1rem] pt-3">
       <section className="image_section rounded-xl md:flex-row flex-col min-h-[20rem] w-full flex items-center gap-8 justify-between">
-        <img
-          src="/images/headHero.png"
-          alt=""
-          className="object-cover md:w-[65%] rounded-[6px] w-full min-h-[20rem]"
-        />
+        <div className="image_container relative md:w-[65%] w-full h-full">
+          <img
+            src="/images/headHero.png"
+            alt=""
+            className="object-cover w-full h-full rounded-[6px]"
+          />
+
+          <div className="text_container w-full absolute top-[5rem] md:left-[0rem] left-[0rem]">
+            <h1 className="gilroy text-white text-center">
+              Welcome to Kioskhive
+            </h1>
+            <h2 className="gilroy-bold md:text-[1.8rem] text-[1.2rem] text-white text-center">
+              Source Top-Quality, Affordable Products
+            </h2>
+            <small className="block text-[#757575] text-center">
+              Free shipping on your first order. we deliver, you enjoy
+            </small>
+            <div className="flex items-center w-full mt-[2rem] mx-auto">
+              <button className="border-none mx-auto text-[.9rem] outline-none rounded-full py-[.5rem] md:px-9 px-6 bg-[#FC9A30] text-white gilroy flex items-center justify-center gap-3">
+                Shop Now
+                <img src="/svgs/arrow-right.svg" alt="" />
+              </button>
+            </div>
+          </div>
+        </div>
         <div className="images_section md:w-[31%] w-full">
           <img src="/images/header2.png" alt="" className="w-full mb-9" />
           <img src="/images/header3.png" alt="" className="w-full" />
