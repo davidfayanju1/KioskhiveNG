@@ -5,6 +5,7 @@ import {
   reccomended,
 } from "../../../data/ProductData";
 import { Link } from "react-router-dom";
+import Section5 from "../home/Section5";
 
 const MarketPlaceComp = () => {
   const items = [
@@ -222,6 +223,10 @@ const MarketPlaceComp = () => {
           ))}
         </div>
       </section>
+
+      <Section5 />
+
+      <section className=" min-h-[20rem] bg-[#E6E6E6] w-full"></section>
     </div>
   );
 };
