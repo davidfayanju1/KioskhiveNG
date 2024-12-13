@@ -96,7 +96,10 @@ const MarketPlaceComp = () => {
             </span>
           </div>
           <div className="all-product-link flex items-center gap-1 justify-center">
-            <Link to={"/products/all"} className="block gilroy text-[#FC9A30]">
+            <Link
+              to={"/products/all"}
+              className="block gilroy text-[#FC9A30] text-[.8rem]"
+            >
               Browse all products
             </Link>
             <img src="/svgs/right-arrow.svg" alt="" />
@@ -123,11 +126,23 @@ const MarketPlaceComp = () => {
 
       <section className="product_card my-[5rem] min-h-[10rem] rounded-[10px] overflow-hidden">
         <div className="first_section flex items-center justify-center flex-wrap">
-          <img
-            src="/images/homecategory.png"
-            alt=""
-            className="h-[20rem] object-cover xl:w-[20%] w-full"
-          />
+          <div className="image_container relative h-[20rem] object-cover xl:w-[20%] w-full">
+            <img
+              src="/images/homecategory.png"
+              alt=""
+              className="w-full h-full object-cover"
+            />
+
+            <div className="text_container absolute top-[1rem] left-[1rem]">
+              <span className="block w-[90%] md:text-[1.6rem] text-[1.2rem] gilroy-semibold font-bold text-[#1C1C1C]">
+                Home and outdoor
+              </span>
+
+              <button className="bg-white rounded-full px-5 py-2 border-none outline-none flex items-center justify-center text-black gilroy">
+                Shop Now
+              </button>
+            </div>
+          </div>
           <div className="image-mega-container">
             <div className="first_section flex items-center flex-wrap">
               {homeNoutdoor.map((item) => (
@@ -165,11 +180,23 @@ const MarketPlaceComp = () => {
 
       <section className="product_card my-[5rem] min-h-[10rem] rounded-[10px] overflow-hidden">
         <div className="first_section flex items-center justify-center flex-wrap">
-          <img
-            src="/images/products/cure.png"
-            alt=""
-            className="h-[20rem] object-cover xl:w-[20%] w-full"
-          />
+          <div className="image_container relative h-[20rem] object-cover xl:w-[20%] w-full">
+            <img
+              src="/images/products/cure.png"
+              alt=""
+              className="w-full h-full object-cover"
+            />
+
+            <div className="text_container absolute top-[1rem] left-[1rem]">
+              <span className="block w-[90%] md:text-[1.6rem] text-[1.2rem] gilroy-semibold font-bold text-[#1C1C1C]">
+                Consumer electronics and gadgets
+              </span>
+
+              <button className="bg-white rounded-full px-5 py-2 border-none outline-none flex items-center justify-center text-black gilroy">
+                Shop Now
+              </button>
+            </div>
+          </div>
           <div className="image-mega-container">
             <div className="first_section flex items-center flex-wrap">
               {homeNoutdoor.map((item) => (

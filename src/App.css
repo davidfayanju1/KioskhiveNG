@@ -13,12 +13,30 @@
   font-family: "Gilroy-Bold";
   src: url("./assets/fonts/Gilroy-ExtraBold.otf") format("opentype");
 }
+
+@font-face {
+  font-family: "Gilroy-Regular";
+  src: url("./assets/fonts/gilroy/Gilroy-Regular.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Gilroy-Semibold";
+  src: url("./assets/fonts/gilroy/Gilroy-SemiBold.ttf") format("truetype");
+}
 .gilroy {
   font-family: "Gilroy", sans-serif;
 }
 
 .gilroy-bold {
   font-family: "Gilroy-Bold", sans-serif;
+}
+
+.gilroy-regular {
+  font-family: "Gilroy-Regular", sans-serif;
+}
+
+.gilroy-semibold {
+  font-family: "Gilroy-Semibold", sans-serif;
 }
 
 .custom-select {
