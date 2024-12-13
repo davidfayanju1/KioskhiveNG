@@ -58,7 +58,7 @@ const Header = () => {
       </section>
 
       <section className="main_header gap-2 bg-[#556AFF] md:px-[4rem] px-[1rem] py-3 flex items-center justify-between">
-        <figure onClick={() => Navigate("/")}>
+        <figure onClick={() => navigate("/")}>
           <img src="/svgs/Logo.svg" alt="Company Logo" />
         </figure>
 
@@ -89,6 +89,8 @@ const Header = () => {
         </div>
       </section>
 
+      {/* <section className="bg-white border-b-[1px] border"></section> */}
+
       <section className="category-container md:px-[4rem] px-[1rem] border-b-[1px] bg-white z-50 border-[#E4E7E9] h-[5rem] flex items-center justify-between">
         <div className="category_section self-center flex items-center justify-center">
           <select
@@ -118,7 +120,7 @@ const Header = () => {
             ))}
           </div>
         </div>
-        <div className="number_container">
+        {/* <div className="number_container">
           <a
             href="tel:+234-816-152-5556"
             className="flex items-center gilroy justify-center md:text-[.9rem] text-[.8rem]"
@@ -126,7 +128,7 @@ const Header = () => {
             <img src="/svgs/phone.svg" alt="Phone" />
             +234-816-152-5556
           </a>
-        </div>
+        </div> */}
       </section>
     </header>
   );

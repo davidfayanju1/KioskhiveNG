@@ -133,12 +133,12 @@ const MarketPlaceComp = () => {
               className="w-full h-full object-cover"
             />
 
-            <div className="text_container absolute top-[1rem] left-[1rem]">
-              <span className="block w-[90%] mb-5 md:text-[1.6rem] text-[1.2rem] gilroy-semibold font-bold text-[#1C1C1C]">
+            <div className="text_container absolute md:text-left text-center w-full top-[1rem] left-[1rem]">
+              <span className="block w-full mb-5 md:text-[1.6rem] text-[1.2rem] gilroy-semibold font-bold text-[#1C1C1C]">
                 Home and outdoor
               </span>
 
-              <button className="bg-white rounded-full px-5 py-2 border-none outline-none flex items-center justify-center text-black gilroy">
+              <button className="bg-white rounded-full px-5 py-2 border-none outline-none flex items-center md:mx-0 mx-auto justify-center text-black gilroy">
                 Shop Now
               </button>
             </div>
@@ -187,12 +187,12 @@ const MarketPlaceComp = () => {
               className="w-full h-full object-cover"
             />
 
-            <div className="text_container absolute top-[1rem] left-[1rem]">
-              <span className="block w-[90%] mb-5 md:text-[1.6rem] text-[1.2rem] gilroy-semibold font-bold text-[#1C1C1C]">
+            <div className="text_container absolute top-[1rem] w-full text-center left-[1rem]">
+              <span className="block w-full mb-5 md:text-[1.6rem] text-[1.2rem] gilroy-semibold font-bold text-[#1C1C1C]">
                 Consumer electronics and gadgets
               </span>
 
-              <button className="bg-white rounded-full px-5 py-2 border-none outline-none flex items-center justify-center text-black gilroy">
+              <button className="bg-white md:mx-0 mx-auto rounded-full px-5 py-2 border-none outline-none flex items-center justify-center text-black gilroy">
                 Shop Now
               </button>
             </div>

@@ -106,12 +106,22 @@ const Nav = ({ active }) => {
   const location = useLocation();
 
   useEffect(() => {
-    if (!open && location.pathname === "/") {
-      document.body.classList.add("no-scroll");
-    } else {
-      document.body.classList.remove("no-scroll");
+    if (location.path === "/") {
+      if (!open) {
+        document.body.classList.add("no-scroll");
+      } else {
+        document.body.classList.remove("no-scroll");
+      }
     }
   }, [open]);
+
+  const handleNavigate = (url) => {
+    navigate(url);
+
+    setOpen(true);
+  };
+
+  console.log(open, "Open");
 
   return (
     <header className="w-full flex items-center justify-between md:px-[4rem] px-[1rem] min-h-[5rem] fixed top-0 left-0 z-[500] bg-[#FFFCF5] bg-opacity-40 backdrop-blur-[10px] shadow-md">
@@ -126,7 +136,7 @@ const Nav = ({ active }) => {
               className={`cursor-pointer ${
                 active === item.active ? "text-[#FC9A30]" : "text-[#727272]"
               }`}
-              onClick={() => navigate(item.url)}
+              onClick={() => handleNavigate(item.url)}
             >
               {item?.name}
             </div>
@@ -158,7 +168,7 @@ const Nav = ({ active }) => {
                   } mx-auto w-[50%] text-center ${
                     item.icon && "justify-start"
                   }`}
-                  onClick={() => navigate(item.url)}
+                  onClick={() => handleNavigate(item.url)}
                 >
                   <div
                     className={`${
