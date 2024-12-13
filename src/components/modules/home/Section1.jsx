@@ -1,7 +1,10 @@
 import React from "react";
 import Button from "../../common/Button";
+import { useNavigate } from "react-router-dom";
 
 const Section1 = () => {
+  const navigate = useNavigate();
+
   return (
     <section className="flex pb-[5rem] md:pt-[1rem] pt-[7rem] bg-[#FFFCF5] md:px-[4rem] px-[1rem] md:flex-row flex-col items-center justify-between">
       <header className="first_container md:w-[50%] w-full">
@@ -21,6 +24,7 @@ const Section1 = () => {
         <div className="button_components flex md:flex-row flex-col items-center justify-start gap-[1rem]">
           <Button name={"Get Started"} className={"bg-[#FC9A30] !w-full"} />
           <Button
+            onPress={() => navigate("/marketplace")}
             name={"Explore Marketplace"}
             className={
               "!border-solid shadow-lg border-[1px] border-[#ececec] !text-[#606060] !w-full"

@@ -53,3 +53,32 @@ export const homeNoutdoor = [
     image: "/images/products/electric.png",
   },
 ];
+
+export const reccomended = [
+  {
+    name: "T-shirts with multiple colors, for men",
+    price: "$10.30",
+    img: "/images/products/duffel.png",
+  },
+
+  {
+    name: "Jeans shorts for menblue color",
+    price: "$12.50",
+    img: "/images/products/jacket.png",
+  },
+  {
+    name: "Jeans shorts for menblue color",
+    price: "$12.50",
+    img: "/images/products/pot.png",
+  },
+  {
+    name: "Jeans shorts for menblue color",
+    price: "$12.50",
+    img: "/images/products/shirt.png",
+  },
+  {
+    name: "Jeans shorts for menblue color",
+    price: "$12.50",
+    img: "/images/products/suits.png",
+  },
+];
