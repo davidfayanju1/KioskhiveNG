@@ -13,18 +13,31 @@ const Header = () => {
   ];
 
   const categories = [
-    { name: "All Category", url: "/all_category" },
-    { name: "Computers & Laptop", url: "/computer_laptop" },
-    { name: "Computers & Accessories", url: "/computer-accessoriess" },
-    { name: "Smart Phone", url: "/smar-phone" },
-    { name: "Headphone", url: "/headphone" },
-    { name: "Mobile Accessories", url: "/mobile-accessories" },
-    { name: "Gaming Console", url: "/gaming_console" },
-    { name: "Camera & Photo", url: "/camera_photo" },
-    { name: "TV & Home Appliances", url: "/tv_home_appliances" },
-    { name: "Watch & Accessories", url: "/watch_accessories" },
-    { name: "GPS & Navigation", url: "/gps_navigation" },
-    { name: "Wearable Technology", url: "warable_tech" },
+    {
+      name: "All Categories",
+      url: "/",
+    },
+    {
+      name: "Computers & Accessories",
+      url: "/computer-accessoriess",
+    },
+    {
+      name: "Camera & Photo",
+      url: "/camera_photo",
+    },
+    {
+      name: "TV & Home Appliances",
+      url: "/tv_home_appliances",
+    },
+    {
+      name: "Watch & Accessories",
+      url: "/watch_accessories",
+    },
+
+    {
+      name: "Wearable Technology",
+      url: "warable_tech",
+    },
   ];
 
   const actions = [
