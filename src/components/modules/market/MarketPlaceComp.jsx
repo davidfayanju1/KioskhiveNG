@@ -126,8 +126,8 @@ const MarketPlaceComp = () => {
       </section>
 
       <section className="product_card my-[5rem] min-h-[10rem] rounded-[10px] overflow-hidden">
-        <div className="first_section flex items-center justify-center flex-wrap">
-          <div className="image_container relative md:h-[20rem] h-[11rem] object-cover xl:w-[20%] w-full">
+        <div className="first_section flex items-center justify-center flex-wrap flex-row custom:flex-col">
+          <div className="image_container relative md:h-[20rem] h-[11rem] object-cover w-[20%] custom:w-full">
             <div className="overlay absolute inset-0 bg-black/10"></div>
             <img
               src="/images/homecategory.png"
@@ -137,7 +137,7 @@ const MarketPlaceComp = () => {
 
             <div className="text_container absolute top-[1rem] w-full left-[1rem]">
               <span className="block w-[65%] mb-5 md:text-[1.4rem] text-[1.2rem] gilroy-semibold font-bold text-[#1C1C1C]">
-                Consumer electronics and gadgets
+                Home and outdoor
               </span>
 
               <button className="bg-white rounded-full px-5 py-2 border-none outline-none flex items-center justify-center text-black gilroy text-[.8rem]">
@@ -145,28 +145,15 @@ const MarketPlaceComp = () => {
               </button>
             </div>
           </div>
-          <div className="image-mega-container">
-            <div className="first_section flex items-center flex-wrap">
+          <div className="image-mega-container w-[80%] custom:w-full">
+            <div className="first_section flex items-center flex-wrap w-full flex-row custom:flex-col">
               {homeNoutdoor.map((item) => (
-                <div className="product_card px-8 md:w-[16rem] w-full pt-9 h-[10rem] border-solid border-[1px] border-gray-300 flex items-center justify-between">
+                <div className="product_card px-8 w-[25%] custom:w-full pt-9 h-[10rem] border-solid border-[1px] border-gray-300 flex items-center justify-between">
                   <div className="text-section">
-                    <h2 className="font-bold gilroy">{item.name}</h2>
-                    <small className="text-[#8B96A5] gilroy text-[.9rem]">
-                      From
-                      <br />
-                      {item.price}
-                    </small>
-                  </div>
-                  <img src={item.image} alt="" />
-                </div>
-              ))}
-            </div>
-            <div className="first_section flex items-center flex-wrap">
-              {homeNoutdoor.map((item) => (
-                <div className="product_card px-8 pt-9 md:w-[16rem] w-full border-solid h-[10rem] border-[1px] border-gray-300 flex items-center justify-between">
-                  <div className="text-section">
-                    <h2 className="font-bold gilroy">{item.name}</h2>
-                    <small className="text-[#8B96A5] gilroy text-[.9rem]">
+                    <h2 className="font-bold gilroy text-[.9rem]">
+                      {item.name}
+                    </h2>
+                    <small className="text-[#8B96A5] gilroy text-[.8rem]">
                       From
                       <br />
                       {item.price}
@@ -181,8 +168,8 @@ const MarketPlaceComp = () => {
       </section>
 
       <section className="product_card my-[5rem] min-h-[10rem] rounded-[10px] overflow-hidden">
-        <div className="first_section flex items-center justify-center flex-wrap">
-          <div className="image_container relative md:h-[20rem] h-[11rem] object-cover xl:w-[20%] w-full">
+        <div className="second_section flex items-center justify-center flex-wrap flex-row custom:flex-col">
+          <div className="image_container relative md:h-[20rem] h-[11rem] object-cover w-[20%] custom:w-full">
             <div className="overlay absolute inset-0 bg-black/10"></div>
             <img
               src="/images/products/cure.png"
@@ -200,28 +187,15 @@ const MarketPlaceComp = () => {
               </button>
             </div>
           </div>
-          <div className="image-mega-container">
-            <div className="first_section flex items-center flex-wrap">
+          <div className="image-mega-container w-[80%] custom:w-full">
+            <div className="first_section flex items-center flex-wrap w-full flex-row custom:flex-col">
               {homeNoutdoor.map((item) => (
-                <div className="product_card px-8 md:w-[16rem] w-full pt-9 h-[10rem] border-solid border-[1px] border-gray-300 flex items-center justify-between">
+                <div className="product_card px-8 w-[25%] custom:w-full pt-9 h-[10rem] border-solid border-[1px] border-gray-300 flex items-center justify-between">
                   <div className="text-section">
-                    <h2 className="font-bold gilroy">{item.name}</h2>
-                    <small className="text-[#8B96A5] gilroy text-[.9rem]">
-                      From
-                      <br />
-                      {item.price}
-                    </small>
-                  </div>
-                  <img src={item.image} alt="" />
-                </div>
-              ))}
-            </div>
-            <div className="first_section flex items-center flex-wrap">
-              {homeNoutdoor.map((item) => (
-                <div className="product_card px-8 pt-9 md:w-[16rem] w-full border-solid h-[10rem] border-[1px] border-gray-300 flex items-center justify-between">
-                  <div className="text-section">
-                    <h2 className="font-bold gilroy">{item.name}</h2>
-                    <small className="text-[#8B96A5] gilroy text-[.9rem]">
+                    <h2 className="font-bold gilroy text-[.9rem]">
+                      {item.name}
+                    </h2>
+                    <small className="text-[#8B96A5] gilroy text-[.8rem]">
                       From
                       <br />
                       {item.price}
