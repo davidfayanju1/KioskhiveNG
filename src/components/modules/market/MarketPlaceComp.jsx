@@ -39,15 +39,15 @@ const MarketPlaceComp = () => {
     <div className="min-h-screen md:px-[4rem] px-[1rem] pt-3">
       <section className="image_section rounded-xl md:flex-row flex-col min-h-[20rem] w-full flex items-center gap-8 justify-between">
         <div className="image_container relative md:w-[65%] w-full h-full">
-          <div className="overlay absolute inset-0 w-full h-full bg-black/20 rounded-[6px]"></div>
+          <div className="overlay absolute inset-0 w-full h-full bg-black/30 rounded-[6px]"></div>
           <img
             src="/images/headHero.png"
             alt=""
             className="object-cover w-full h-full rounded-[6px]"
           />
 
-          <div className="text_container w-full absolute md:top-[5rem] top-[2rem] md:left-[0rem] left-[0rem]">
-            <h1 className="gilroy text-white text-center">
+          <div className="text_container w-full absolute md:top-[5rem] top-[1rem] md:left-[0rem] left-[0rem]">
+            <h1 className="gilroy text-white text-center md:text-[1rem] text-[.9rem]">
               Welcome to Kioskhive
             </h1>
             <h2 className="gilroy-bold md:text-[1.8rem] text-[1.2rem] text-white text-center">
