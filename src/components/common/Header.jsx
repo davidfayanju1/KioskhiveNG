@@ -89,7 +89,21 @@ const Header = () => {
         </div>
       </section>
 
-      {/* <section className="bg-white border-b-[1px] border"></section> */}
+      <section className="bg-white h-[4rem] border md:hidden grid place-items-center">
+        <div className="input_container flex items-center justify-between bg-white py-2 rounded-full w-[98%] mx-auto px-5 border-solid border-[1px] border-gray-300">
+          <input
+            type="text"
+            placeholder="Search For anything..."
+            className="outline-none font-gilroy border-none w-full placeholder:text-[#77878F] placeholder:text-[14px] text-[16px]"
+            value={input}
+            onChange={(e) => setInput(e.target.value)}
+          />
+
+          <figure className="icon">
+            <img src="/svgs/search.svg" alt="Search Icon" />
+          </figure>
+        </div>
+      </section>
 
       <section className="category-container md:px-[4rem] px-[1rem] border-b-[1px] bg-white z-50 border-[#E4E7E9] h-[5rem] flex items-center justify-between">
         <div className="category_section self-center flex items-center justify-center">

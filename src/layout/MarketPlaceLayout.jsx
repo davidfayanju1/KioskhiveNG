@@ -11,7 +11,9 @@ const MarketPlaceLayout = ({ children }) => {
   return (
     <div className="page_container">
       <Header />
-      <div className="children_container mt-[13.5rem]">{children}</div>
+      <div className="children_container md:mt-[13.5rem] mt-[18rem]">
+        {children}
+      </div>
       <div className="item_container bg-[#E6E6E6] md:px-[4rem] px-[1rem] w-full md:gap-3 gap-6 py-[2rem] flex items-center md:justify-between flex-wrap">
         <div className="first_section">
           <h3 className="md:gilroy-bold gilroy-semibold font-[700] text-black md:text-[1.3rem] text-[1rem]">

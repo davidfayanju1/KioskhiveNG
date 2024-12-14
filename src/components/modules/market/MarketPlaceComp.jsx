@@ -18,7 +18,7 @@ const MarketPlaceComp = () => {
 
     {
       icon: "/svgs/return.svg",
-      name: "24 HOURS RETURN  ",
+      name: "24 HOURS RETURN",
       subText: "100% money-back guarantee",
     },
 
@@ -53,7 +53,7 @@ const MarketPlaceComp = () => {
             <h2 className="gilroy-bold md:text-[1.8rem] text-[1.2rem] text-white text-center">
               Source Top-Quality, Affordable Products
             </h2>
-            <small className="block text-[#b9b8b8] text-center">
+            <small className="block text-gray-200 text-center">
               Free shipping on your first order. we deliver, you enjoy
             </small>
             <div className="flex items-center w-full mt-[2rem] mx-auto">
@@ -73,7 +73,7 @@ const MarketPlaceComp = () => {
       <section className="card_section rounded-[6px] border-solid border-[1px] border-[#E4E7E9] py-[2rem] my-[4rem] flex md:items-center items-start gap-[3rem] justify-between px-[4rem] md:flex-row flex-wrap flex-col">
         {items.map((item) => (
           <div
-            className="card flex items-center gap-5 justify-start"
+            className="flex items-center gap-5 justify-start"
             key={item.name}
           >
             <img src={item.icon} alt="" className="self-start" />
@@ -110,7 +110,7 @@ const MarketPlaceComp = () => {
         <div className="flex items-center justify-center gap-8 flex-wrap flex-col md:flex-row">
           {productModel.map((item) => (
             <div
-              className="card rounded-[8px] md:max-w-[15rem] w-[95%] h-[19rem] border-solid border-[1px]"
+              className="rounded-[8px] md:max-w-[15rem] w-[95%] md:h-[19rem] pb-[1rem] border-solid border-[1px]"
               key={item.name}
             >
               <img src={item.img} alt="" className="h-[50%] mx-auto" />
@@ -127,16 +127,17 @@ const MarketPlaceComp = () => {
 
       <section className="product_card my-[5rem] min-h-[10rem] rounded-[10px] overflow-hidden">
         <div className="first_section flex items-center justify-center flex-wrap">
-          <div className="image_container relative h-[20rem] object-cover xl:w-[20%] w-full">
+          <div className="image_container relative md:h-[20rem] h-[11rem] object-cover xl:w-[20%] w-full">
+            <div className="overlay absolute inset-0 bg-black/10"></div>
             <img
               src="/images/homecategory.png"
               alt=""
               className="w-full h-full object-cover"
             />
 
-            <div className="text_container absolute md:text-left w-full top-[1rem] left-[1rem]">
-              <span className="block w-[55%]  mb-5 md:text-[1.4rem] text-[1.2rem] gilroy-semibold font-bold text-[#1C1C1C]">
-                Home and outdoor
+            <div className="text_container absolute top-[1rem] w-full left-[1rem]">
+              <span className="block w-[65%] mb-5 md:text-[1.4rem] text-[1.2rem] gilroy-semibold font-bold text-[#1C1C1C]">
+                Consumer electronics and gadgets
               </span>
 
               <button className="bg-white rounded-full px-5 py-2 border-none outline-none flex items-center justify-center text-black gilroy text-[.8rem]">
@@ -181,7 +182,8 @@ const MarketPlaceComp = () => {
 
       <section className="product_card my-[5rem] min-h-[10rem] rounded-[10px] overflow-hidden">
         <div className="first_section flex items-center justify-center flex-wrap">
-          <div className="image_container relative h-[20rem] object-cover xl:w-[20%] w-full">
+          <div className="image_container relative md:h-[20rem] h-[11rem] object-cover xl:w-[20%] w-full">
+            <div className="overlay absolute inset-0 bg-black/10"></div>
             <img
               src="/images/products/cure.png"
               alt=""

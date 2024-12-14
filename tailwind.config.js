@@ -6,6 +6,10 @@ export default {
       fontFamily: {
         aeonik: ["aeonik-trial", "sans-serif"],
       },
+
+      screens: {
+        custom: { max: "1250px" },
+      },
     },
   },
   plugins: [],

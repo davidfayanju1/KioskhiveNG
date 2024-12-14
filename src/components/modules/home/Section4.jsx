@@ -29,7 +29,7 @@ const Section4 = () => {
         <div className="flex-container flex items-start justify-start md:gap-[1rem] gap-[2rem] md:flex-row flex-col">
           {data.map((item) => (
             <div className="item_card">
-              <div className="title font-[600] text-center text-white md:text-[1.8rem] text-[1.3h1 mb-[1rem]">
+              <div className="title font-[600] text-center text-white md:text-[1.8rem] text-[1.5rem] mb-[1rem]">
                 {item.title}
               </div>
               <div className="text text-white font-[400] text-center text-[1rem]">
