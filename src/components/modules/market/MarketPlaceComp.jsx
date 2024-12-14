@@ -39,20 +39,21 @@ const MarketPlaceComp = () => {
     <div className="min-h-screen md:px-[4rem] px-[1rem] pt-3">
       <section className="image_section rounded-xl md:flex-row flex-col min-h-[20rem] w-full flex items-center gap-8 justify-between">
         <div className="image_container relative md:w-[65%] w-full h-full">
+          <div className="overlay absolute inset-0 w-full h-full bg-black/20 rounded-[6px]"></div>
           <img
             src="/images/headHero.png"
             alt=""
             className="object-cover w-full h-full rounded-[6px]"
           />
 
-          <div className="text_container w-full absolute md:top-[5rem] top-[1rem] md:left-[0rem] left-[0rem]">
+          <div className="text_container w-full absolute md:top-[5rem] top-[2rem] md:left-[0rem] left-[0rem]">
             <h1 className="gilroy text-white text-center">
               Welcome to Kioskhive
             </h1>
             <h2 className="gilroy-bold md:text-[1.8rem] text-[1.2rem] text-white text-center">
               Source Top-Quality, Affordable Products
             </h2>
-            <small className="block text-[#757575] text-center">
+            <small className="block text-[#b9b8b8] text-center">
               Free shipping on your first order. we deliver, you enjoy
             </small>
             <div className="flex items-center w-full mt-[2rem] mx-auto">
@@ -133,12 +134,12 @@ const MarketPlaceComp = () => {
               className="w-full h-full object-cover"
             />
 
-            <div className="text_container absolute md:text-left text-center w-full top-[1rem] left-[1rem]">
-              <span className="block w-full mb-5 md:text-[1.6rem] text-[1.2rem] gilroy-semibold font-bold text-[#1C1C1C]">
+            <div className="text_container absolute md:text-left w-full top-[1rem] left-[1rem]">
+              <span className="block w-[55%]  mb-5 md:text-[1.4rem] text-[1.2rem] gilroy-semibold font-bold text-[#1C1C1C]">
                 Home and outdoor
               </span>
 
-              <button className="bg-white rounded-full px-5 py-2 border-none outline-none flex items-center md:mx-0 mx-auto justify-center text-black gilroy">
+              <button className="bg-white rounded-full px-5 py-2 border-none outline-none flex items-center justify-center text-black gilroy text-[.8rem]">
                 Shop Now
               </button>
             </div>
@@ -187,12 +188,12 @@ const MarketPlaceComp = () => {
               className="w-full h-full object-cover"
             />
 
-            <div className="text_container absolute top-[1rem] w-full text-center left-[1rem]">
-              <span className="block w-full mb-5 md:text-[1.6rem] text-[1.2rem] gilroy-semibold font-bold text-[#1C1C1C]">
+            <div className="text_container absolute top-[1rem] w-full left-[1rem]">
+              <span className="block w-[65%] mb-5 md:text-[1.4rem] text-[1.2rem] gilroy-semibold font-bold text-[#1C1C1C]">
                 Consumer electronics and gadgets
               </span>
 
-              <button className="bg-white md:mx-0 mx-auto rounded-full px-5 py-2 border-none outline-none flex items-center justify-center text-black gilroy">
+              <button className="bg-white rounded-full px-5 py-2 border-none outline-none flex items-center justify-center text-black gilroy text-[.8rem]">
                 Shop Now
               </button>
             </div>
@@ -247,7 +248,7 @@ const MarketPlaceComp = () => {
                 <span className="block gilroy font-bold text-[.9rem]">
                   {item.price}
                 </span>
-                <small className="block truncate gilroy text-gray-300">
+                <small className="block truncate gilroy text-[#8B96A5]">
                   {item.name}
                 </small>
               </div>
@@ -265,7 +266,7 @@ const MarketPlaceComp = () => {
                 <span className="block gilroy font-bold text-[.9rem]">
                   {item.price}
                 </span>
-                <small className="block truncate gilroy text-gray-300">
+                <small className="block truncate gilroy text-[#8B96A5]">
                   {item.name}
                 </small>
               </div>
