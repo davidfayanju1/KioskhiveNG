@@ -107,7 +107,7 @@ const MarketPlaceComp = () => {
           </div>
         </div>
 
-        <div className="flex items-center justify-center gap-8 flex-wrap flex-col md:flex-row">
+        <div className="flex items-center justify-center gap-4 flex-col md:flex-row">
           {productModel.map((item) => (
             <div
               className="rounded-[8px] md:max-w-[15rem] w-[95%] md:h-[19rem] pb-[1rem] border-solid border-[1px]"
