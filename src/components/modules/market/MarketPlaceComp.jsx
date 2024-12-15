@@ -107,10 +107,10 @@ const MarketPlaceComp = () => {
           </div>
         </div>
 
-        <div className="flex items-center justify-center gap-4 flex-col md:flex-row">
+        <div className="flex items-center justify-center gap-4 flex-wrap flex-col md:flex-row">
           {productModel.map((item) => (
             <div
-              className="rounded-[8px] md:max-w-[15rem] w-[95%] md:h-[19rem] pb-[1rem] border-solid border-[1px]"
+              className="rounded-[8px] cursor-pointer md:w-[15rem] w-full md:h-[19rem] pb-[1rem] border-solid border-[1px]"
               key={item.name}
             >
               <img src={item.img} alt="" className="h-[50%] mx-auto" />
@@ -148,7 +148,7 @@ const MarketPlaceComp = () => {
           <div className="image-mega-container w-[80%] custom:w-full">
             <div className="first_section flex items-center flex-wrap w-full flex-row custom:flex-col">
               {homeNoutdoor.map((item) => (
-                <div className="product_card px-8 w-[25%] custom:w-full pt-9 h-[10rem] border-solid border-[1px] border-gray-300 flex items-center justify-between">
+                <div className="product_card cusor-pointer px-8 w-[25%] custom:w-full pt-9 h-[10rem] border-solid border-[1px] border-gray-300 flex items-center justify-between">
                   <div className="text-section">
                     <h2 className="font-bold gilroy text-[.9rem]">
                       {item.name}
@@ -190,7 +190,7 @@ const MarketPlaceComp = () => {
           <div className="image-mega-container w-[80%] custom:w-full">
             <div className="first_section flex items-center flex-wrap w-full flex-row custom:flex-col">
               {homeNoutdoor.map((item) => (
-                <div className="product_card px-8 w-[25%] custom:w-full pt-9 h-[10rem] border-solid border-[1px] border-gray-300 flex items-center justify-between">
+                <div className="product_card cursor-pointer px-8 w-[25%] custom:w-full pt-9 h-[10rem] border-solid border-[1px] border-gray-300 flex items-center justify-between">
                   <div className="text-section">
                     <h2 className="font-bold gilroy text-[.9rem]">
                       {item.name}
@@ -217,7 +217,7 @@ const MarketPlaceComp = () => {
           {reccomended.map((item) => (
             <div
               key={item.price}
-              className="card md:h-[20rem] pt-[1rem] md:w-[45%] md:max-w-[15rem] w-full border-solid border-[1px] border-[#acacac] rounded-[6px]"
+              className="card md:h-[20rem] cursor-pointer pt-[1rem] md:w-[45%] md:max-w-[15rem] w-full border-solid border-[1px] border-[#acacac] rounded-[6px]"
             >
               <img src={item.img} alt="" className="h-[60%] pb-4 mx-auto" />
               <div className="text_container p-3 ">
