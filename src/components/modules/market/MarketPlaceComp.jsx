@@ -7,6 +7,9 @@ import {
 import { Link } from "react-router-dom";
 import Section5 from "../home/Section5";
 import Button from "../../common/Button";
+import Slider from "react-slick";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 
 const MarketPlaceComp = () => {
   const items = [
@@ -34,6 +37,32 @@ const MarketPlaceComp = () => {
       subText: "Live contact/message",
     },
   ];
+
+  const images = [
+    {
+      name: "",
+      path: "/images/header3.png",
+    },
+    {
+      name: "",
+      path: "/images/header2.png",
+    },
+    {
+      name: "",
+      path: "/images/header3.png",
+    },
+  ];
+
+  const settings = {
+    dots: true,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    autoplay: true,
+    autoplaySpeed: 4000,
+    pauseOnHover: true,
+  };
 
   return (
     <div className="min-h-screen md:px-[4rem] px-[1rem] pt-3">
@@ -66,7 +95,16 @@ const MarketPlaceComp = () => {
         </div>
         <div className="images_section md:w-[31%] w-full">
           <img src="/images/header2.png" alt="" className="w-full mb-9" />
-          <img src="/images/header3.png" alt="" className="w-full" />
+
+          <div className="slider-container">
+            <Slider {...settings}>
+              {images.map((image, index) => (
+                <div key={index}>
+                  <img src={image.path} alt={image.path} />
+                </div>
+              ))}
+            </Slider>
+          </div>
         </div>
       </section>
 
