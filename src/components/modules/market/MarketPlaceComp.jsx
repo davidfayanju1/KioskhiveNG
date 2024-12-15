@@ -70,10 +70,10 @@ const MarketPlaceComp = () => {
         </div>
       </section>
 
-      <section className="card_section rounded-[6px] border-solid border-[1px] border-[#E4E7E9] py-[2rem] my-[4rem] flex md:items-center items-start gap-[3rem] justify-between px-[4rem] md:flex-row flex-wrap flex-col">
+      <section className="card_section rounded-[6px] border-solid border-[1px] border-[#E4E7E9] py-[2rem] my-[4rem] flex md:items-start items-start gap-[3rem] justify-between px-[4rem] md:flex-row flex-wrap flex-col">
         {items.map((item) => (
           <div
-            className="flex items-center gap-5 justify-start"
+            className="flex items-center w-[14rem] gap-5 justify-start mx-auto"
             key={item.name}
           >
             <img src={item.icon} alt="" className="self-start" />
