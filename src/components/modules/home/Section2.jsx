@@ -12,9 +12,9 @@ const Section2 = () => {
         </h2>
       </header>
 
-      <div className="item_container flex md:flex-row flex-col md:gap-0 gap-[5rem] items-center justify-center">
-        <div className="card w-[90%] md:w-[22rem]">
-          <figure className="mx-auto relative mb-[1rem] flex items-center justify-center bg-white shadow-xl md:w-[12rem] md:h-[12rem] w-[10rem] h-[10rem] rounded-full">
+      <div className="item_container flex md:flex-row tab:flex-col md:gap-[.8rem] gap-[5rem] items-center justify-center">
+        <div className="card w-[90%] md:w-[22rem] ">
+          <figure className="mx-auto relative mb-[1rem] flex items-center justify-center bg-white shadow-xl md:w-[9rem] md:h-[9rem] w-[10rem] h-[10rem] rounded-full">
             <span className="flex shadow-xl absolute top-0 left-[-10%] items-center justify-center w-[1.9rem] h-[1.9rem] rounded-full text-[.9rem] font-[500] bg-white">
               1
             </span>
@@ -28,12 +28,12 @@ const Section2 = () => {
           </p>
         </div>
 
-        <div className="down-wave md:block hidden">
+        <div className="down-wave md:block custom:hidden">
           <img src="/svgs/down-wave.svg" alt="" />
         </div>
 
-        <div className="card w-[90%] md:w-[22rem]">
-          <figure className="border-[1px] mb-[1rem] relative border-dashed border-black md:w-[12rem] md:h-[12rem] w-[10rem] h-[10rem] mx-auto rounded-full flex items-center justify-center">
+        <div className="card w-[90%] md:w-[22rem] ">
+          <figure className="border-[1px] mb-[1rem] relative border-dashed border-black md:w-[9rem] md:h-[9rem] w-[10rem] h-[10rem] mx-auto rounded-full flex items-center justify-center">
             <span className="flex absolute top-0 left-[-10%] items-center bg-[#F6F6F7] justify-center w-[1.9rem] h-[1.9rem] rounded-full text-[.9rem] font-[500]">
               2
             </span>
@@ -51,12 +51,12 @@ const Section2 = () => {
           </p>
         </div>
 
-        <div className="up-wave md:block hidden">
+        <div className="up-wave md:block custom:hidden">
           <img src="/svgs/up-wave.svg" alt="" />
         </div>
 
-        <div className="card w-[90%] md:w-[22rem]">
-          <figure className="border-[1px] mb-[1rem] relative border-dashed border-black md:w-[12rem] md:h-[12rem] w-[10rem] h-[10rem] mx-auto rounded-full flex items-center justify-center">
+        <div className="card w-[90%] md:w-[22rem] ">
+          <figure className="border-[1px] mb-[1rem] relative border-dashed border-black md:w-[9rem] md:h-[9rem] w-[10rem] h-[10rem] mx-auto rounded-full flex items-center justify-center">
             <span className="flex absolute top-0 left-[-10%] items-center bg-[#F6F6F7] justify-center w-[1.9rem] h-[1.9rem] rounded-full text-[.9rem] font-[500]">
               3
             </span>

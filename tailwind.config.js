@@ -9,6 +9,7 @@ export default {
 
       screens: {
         custom: { max: "1250px" },
+        tab: { max: "900px" },
       },
     },
   },

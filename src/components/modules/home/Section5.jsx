@@ -25,7 +25,7 @@ const Section5 = () => {
     },
   ];
   return (
-    <section className="section_container min-h-[60vh] w-full py-[3rem]">
+    <section className="section_container min-h-[40vh] w-full py-[2rem]">
       <small className="testimonial_title flex items-center justify-center gap-[.4rem]">
         <figure>
           <img src="/svgs/bubble.svg" alt="" />

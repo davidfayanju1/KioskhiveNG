@@ -6,8 +6,8 @@ const Section1 = () => {
   const navigate = useNavigate();
 
   return (
-    <section className="flex pb-[5rem] md:pt-[1rem] pt-[7rem] bg-[#FFFCF5] md:px-[4rem] px-[1rem] md:flex-row flex-col items-center justify-between">
-      <header className="first_container md:w-[50%] w-full">
+    <section className="flex pb-[5rem] md:pt-[1rem] custom:pt-[7rem] bg-[#FFFCF5] md:px-[4rem] px-[1rem] md:flex-row custom:flex-col items-center justify-between">
+      <header className="first_container md:w-[50%] custom:w-full">
         <div>
           <h1 className="font-[500] text-[#000000] font-aeonik md:text-[3.2vw] text-[1.55rem]">
             Welcome to Kioskhive: The Perfect Local Online Marketplace For Your
@@ -32,7 +32,7 @@ const Section1 = () => {
           />
         </div>
       </header>
-      <figure className="relative md:w-[50%]">
+      <figure className="relative md:w-[50%] custom:w-full">
         <img
           src="/svgs/hero.svg"
           alt=""

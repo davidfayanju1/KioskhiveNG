@@ -58,9 +58,12 @@ const Section3 = () => {
           </h2>
         </header>
 
-        <div className="first_flex_container flex items-start w-full justify-center gap-[1.5rem] md:flex-row flex-col">
+        <div className="first_flex_container flex items-start w-full justify-center gap-[1.5rem] md:flex-row custom:flex-col">
           {firstRow.map((item) => (
-            <div className="item_card  md:!w-[40%] w-full" key={item.title}>
+            <div
+              className="item_card  md:!w-[40%] custom:!w-full"
+              key={item.title}
+            >
               <div className="text-left">
                 {item.svg ? (
                   <img src={item.svg} alt="" />
@@ -78,9 +81,12 @@ const Section3 = () => {
           ))}
         </div>
 
-        <div className="first_flex_container mt-[2rem] flex items-start w-full justify-center gap-[1.5rem] md:flex-row flex-col">
+        <div className="first_flex_container mt-[2rem] flex items-start w-full justify-center gap-[1.5rem] md:flex-row custom:flex-col">
           {secondRow.map((item) => (
-            <div className="item_card md:!w-[40%] w-full" key={item.title}>
+            <div
+              className="item_card md:!w-[40%] custom:!w-full"
+              key={item.title}
+            >
               <div className="text-left">
                 {item.svg ? (
                   <img src={item.svg} alt="" />
