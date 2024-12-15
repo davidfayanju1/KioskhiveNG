@@ -14,29 +14,59 @@ const Header = () => {
 
   const categories = [
     {
-      name: "All Categories",
-      url: "/",
+      name: "Top Selling",
+      url: "/top-selling",
     },
     {
-      name: "Computers & Accessories",
-      url: "/computer-accessoriess",
+      name: "New",
+      url: "/new",
     },
     {
-      name: "Camera & Photo",
-      url: "/camera_photo",
+      name: "Men",
+      url: "/men",
     },
     {
-      name: "TV & Home Appliances",
-      url: "/tv_home_appliances",
+      name: "Home and decor",
+      url: "/Home-decor",
     },
     {
-      name: "Watch & Accessories",
-      url: "/watch_accessories",
+      name: "Women",
+      url: "/women",
     },
 
     {
-      name: "Wearable Technology",
-      url: "warable_tech",
+      name: "Jewelries",
+      url: "Jewelries",
+    },
+
+    {
+      name: "Make over",
+      url: "/makeover",
+    },
+
+    {
+      name: "Adire",
+      url: "/adire",
+    },
+
+    {
+      name: "Paper and Novelty",
+      url: "/paper-novelty",
+    },
+
+    {
+      name: "Scented Candles",
+      url: "/candles",
+    },
+
+    {
+      name: "Pets",
+      url: "/pets",
+    },
+
+    {
+      name: "Kiddies Lounge",
+      url: "/kiddies-lounge",
     },
   ];
 
