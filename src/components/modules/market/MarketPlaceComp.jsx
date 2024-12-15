@@ -99,8 +99,8 @@ const MarketPlaceComp = () => {
           <div className="slider-container">
             <Slider {...settings}>
               {images.map((image, index) => (
-                <div key={index}>
-                  <img src={image.path} alt={image.path} />
+                <div key={index} className="">
+                  <img src={image.path} alt={image.path} className="w-full" />
                 </div>
               ))}
             </Slider>
