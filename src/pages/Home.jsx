@@ -26,7 +26,7 @@ const Home = () => {
       <FadeLayout delay={1.8}>
         <Section5 />
       </FadeLayout>
-      <FadeLayout delay={2.2}>
+      <FadeLayout delay={1.8}>
         <Section6 />
       </FadeLayout>
     </DefaultLayout>
