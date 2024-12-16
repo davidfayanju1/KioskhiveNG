@@ -94,7 +94,9 @@ const MarketPlaceComp = () => {
           </div>
         </div>
         <div className="images_section md:w-[31%] w-full">
-          <img src="/images/header2.png" alt="" className="w-full mb-9" />
+          <div className="image_container">
+            <img src="/images/header2.png" alt="" className="w-full mb-9" />
+          </div>
 
           <div className="slider-container">
             <Slider {...settings}>

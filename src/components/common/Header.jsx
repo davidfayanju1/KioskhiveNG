@@ -148,7 +148,7 @@ const Header = () => {
         </div>
       </section>
 
-      <section className="category-container md:px-[4rem] px-[1rem] border-b-[1px] bg-white z-50 border-[#E4E7E9] h-[5rem] flex items-center justify-between">
+      <section className="category-container md:px-[4rem] px-[1rem] border-b-[1px] bg-white z-50 border-[#E4E7E9] h-[3.5rem] flex items-center justify-between">
         <div className="category_section self-center flex items-center justify-center">
           <select
             name="category"
