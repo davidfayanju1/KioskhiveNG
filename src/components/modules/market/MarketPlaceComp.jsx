@@ -100,7 +100,7 @@ const MarketPlaceComp = () => {
               <img src="/images/header2.png" alt="" className="w-full mb-9" />
             </div>
 
-            <div className="slider-container overflow-hidden ">
+            <div className="slider-container overflow-hidden">
               <Slider {...settings}>
                 {images.map((image, index) => (
                   <div key={index} className="">
@@ -113,7 +113,7 @@ const MarketPlaceComp = () => {
         </section>
       </FadeLayout>
 
-      <FadeLayout delay={0.7}>
+      <FadeLayout delay={0.6}>
         <section className="card_section rounded-[6px] border-solid border-[1px] border-[#E4E7E9] py-[2rem] my-[4rem] flex md:items-start items-start gap-[3rem] justify-between px-[4rem] md:flex-row flex-wrap flex-col">
           {items.map((item) => (
             <div
@@ -134,7 +134,7 @@ const MarketPlaceComp = () => {
         </section>
       </FadeLayout>
 
-      <FadeLayout delay={1.0}>
+      <FadeLayout delay={0.7}>
         <section className="bestdeal">
           <div className="item_flex flex mb-7 items-center justify-between">
             <div className="title_container flex items-center">
@@ -172,7 +172,7 @@ const MarketPlaceComp = () => {
         </section>
       </FadeLayout>
 
-      <FadeLayout delay={1.4}>
+      <FadeLayout delay={0.9}>
         <section className="product_card my-[5rem] min-h-[10rem] rounded-[10px] overflow-hidden">
           <div className="first_section flex items-center justify-center flex-wrap flex-row custom:flex-col">
             <div className="image_container relative md:h-[20rem] h-[11rem] object-cover w-[20%] custom:w-full">
@@ -216,7 +216,7 @@ const MarketPlaceComp = () => {
         </section>
       </FadeLayout>
 
-      <FadeLayout delay={1.55}>
+      <FadeLayout delay={1}>
         <section className="product_card my-[5rem] min-h-[10rem] rounded-[10px] overflow-hidden">
           <div className="second_section flex items-center justify-center flex-wrap flex-row custom:flex-col">
             <div className="image_container relative md:h-[20rem] h-[11rem] object-cover w-[20%] custom:w-full">
@@ -260,7 +260,7 @@ const MarketPlaceComp = () => {
         </section>
       </FadeLayout>
 
-      <FadeLayout delay={1.7}>
+      <FadeLayout delay={1.1}>
         <section className="recommended min-h-[20rem] mb-[3rem]">
           <h2 className="text-black font-bold gilroy-bold text-[1.5rem] mb-9">
             Recommended Items
@@ -286,7 +286,7 @@ const MarketPlaceComp = () => {
         </section>
       </FadeLayout>
 
-      <FadeLayout delay={1.9}>
+      <FadeLayout delay={1.3}>
         <Section5 />
       </FadeLayout>
     </div>
