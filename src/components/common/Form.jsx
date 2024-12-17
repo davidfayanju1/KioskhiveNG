@@ -16,7 +16,7 @@ const Form = ({ label, type, containerStyle, placeholder, onChange }) => {
         className={`input_container flex w-full border-solid border-[#E4E7E9] rounded-[9px] border-[1px] h-[3rem] px-3 items-center justify-between ${containerStyle}`}
       >
         <input
-          type={type && show ? "text" : "password"}
+          type={type === "password" ? (show ? "text" : "password") : type}
           className={`bg-transparent placeholder:text-[12.5px] outline-none text-[16px] placeholder:text-gray-400 ${
             type === "password" ? "w-[80%]" : "w-full"
           }`}
