@@ -22,7 +22,11 @@ const Section1 = () => {
         </div>
 
         <div className="button_components flex md:flex-row flex-col items-center justify-start gap-[1rem]">
-          <Button name={"Get Started"} className={"bg-[#FC9A30] !w-full"} />
+          <Button
+            onPress={() => navigate("/login")}
+            name={"Get Started"}
+            className={"bg-[#FC9A30] !w-full"}
+          />
           <Button
             onPress={() => navigate("/marketplace")}
             name={"Explore Marketplace"}

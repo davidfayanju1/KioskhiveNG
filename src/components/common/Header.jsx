@@ -1,6 +1,8 @@
 import React from "react";
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
+import Form from "./Form";
+import Button from "./Button";
 
 const Header = () => {
   const icons = [
@@ -80,6 +82,8 @@ const Header = () => {
 
   const navigate = useNavigate();
 
+  const [open, setOpen] = useState(false);
+
   return (
     <header className="fixed top-0 left-0 w-full z-50">
       <section className="header_container md:px-[4rem] px-[1rem] border-b-[1px] py-3 border-white bg-[#556AFF] flex items-center md:justify-between justify-center gap-2 flex-wrap">
@@ -119,16 +123,46 @@ const Header = () => {
           </figure>
         </div>
 
-        <div className="icon_container flex items-center justify-center gap-2">
+        <div className="icon_container relative flex items-center justify-center gap-2">
           <button className="outline-none border-none">
             <img src="/svgs/cart.svg" alt="Cart" />
           </button>
           <button className="outline-none border-none md:block hidden">
             <img src="/svgs/like.svg" alt="Like" />
           </button>
-          <button className="outline-none border-none">
+          <button
+            onClick={() => setOpen(!open)}
+            className="outline-none border-none"
+          >
             <img src="/svgs/user.svg" alt="User" />
           </button>
+
+          {open && (
+            <div className="modal_component absolute bg-white top-[2rem] md:right-[-1.5rem] right-0 shadow-lg rounded-[6px] min-h-[20rem] p-[1rem] py-[1.5rem] md:w-[30rem] w-[20rem] z-10">
+              <span className="title block mb-9 gilroy-semibold font-bold text-center text-[1rem]">
+                Sign In To Your Account
+              </span>
+              <div className="form_container">
+                <Form
+                  type={"text"}
+                  containerStyle={"mb-4"}
+                  placeholder={"Enter Email"}
+                  label={"Email Address"}
+                  onChange={(e) => console.log(e.target.value)}
+                />
+
+                <Form
+                  type={"password"}
+                  containerStyle={"mb-[2rem]"}
+                  placeholder={"Enter Password"}
+                  label={"Password"}
+                  onChange={(e) => console.log(e.target.value)}
+                />
+
+                <Button name={"Login"} className={"bg-[#FC9A30] w-full"} />
+              </div>
+            </div>
+          )}
         </div>
       </section>
 
