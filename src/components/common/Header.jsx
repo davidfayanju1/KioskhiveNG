@@ -159,7 +159,23 @@ const Header = () => {
                   onChange={(e) => console.log(e.target.value)}
                 />
 
-                <Button name={"Login"} className={"bg-[#FC9A30] w-full"} />
+                <Button
+                  name={"LOGIN"}
+                  className={"bg-[#FC9A30] w-full !text-[.8rem]"}
+                />
+                <div className="flex-contianer flex items-center my-[1rem] justify-between">
+                  <div className="block h-[.0035rem] bg-[#E4E7E9] w-[23%]"></div>
+                  <span className="block gilroy text-[#77878F] text-[.8rem]">
+                    Don't have an account
+                  </span>
+                  <div className="block h-[.0035rem] bg-[#E4E7E9] w-[23%]"></div>
+                </div>
+                <Button
+                  name={"CREATE ACCOUNT"}
+                  className={
+                    "border-[#FC9A30] !border-solid !text-[.7rem] border-[1px] w-full !text-[#FC9A30]"
+                  }
+                />
               </div>
             </div>
           )}
