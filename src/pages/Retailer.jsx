@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 
 const Retailer = () => {
   return (
-    <div className="page_container">
+    <div className="page_container pb-[4rem]">
       <div className="image_container mx-auto pt-[1rem] mb-[3rem]">
         <img src="/svgs/company.svg" alt="" className="w-[8rem] mx-auto" />
       </div>
@@ -35,23 +35,44 @@ const Retailer = () => {
               />
             </div>
           </div>
-          <Form
-            label={"Phone Number"}
-            type={"number"}
-            placeholder={"Enter Phone Number"}
-            containerStyle={"!border-none mb-5 bg-[#f2e1ce]/70"}
-          />
-          <Form
-            label={"Business Name"}
-            type={"text"}
-            placeholder={"Enter Business Name"}
-            containerStyle={"!border-none mb-5 bg-[#f2e1ce]/70"}
-          />
+
+          <div className="flex items-center mb-3 justify-center gap-3  md:flex-row flex-col">
+            <div className="form-container w-full">
+              <Form
+                label={"Phone Number"}
+                type={"number"}
+                placeholder={"Enter Phone Number"}
+                containerStyle={"!border-none bg-[#f2e1ce]/70"}
+              />
+            </div>
+
+            <div className="form-container w-full">
+              <Form
+                label={"User Name"}
+                type={"text"}
+                placeholder={"Enter Username"}
+                containerStyle={"!border-none bg-[#f2e1ce]/70"}
+              />
+            </div>
+          </div>
+
           <Form
             label={"Business Address"}
             type={"text"}
             placeholder={"Enter Business Address"}
-            containerStyle={"!border-none mb-9 bg-[#f2e1ce]/70"}
+            containerStyle={"!border-none mb-3 bg-[#f2e1ce]/70"}
+          />
+          <Form
+            label={"Password"}
+            type={"password"}
+            placeholder={"Enter Password"}
+            containerStyle={"!border-none mb-3 bg-[#f2e1ce]/70"}
+          />
+          <Form
+            label={"Confirm Password"}
+            type={"password"}
+            placeholder={"Confirm Password"}
+            containerStyle={"!border-none mb-[3rem] bg-[#f2e1ce]/70"}
           />
 
           <Button
@@ -60,7 +81,7 @@ const Retailer = () => {
             onPress={() => console.log("ok")}
           />
 
-          <small className="block text-center gilroy mt-1">
+          <small className="block text-center gilroy mt-2">
             Change of thoughts?{" "}
             <Link
               to={"/signup/manufacturer"}
