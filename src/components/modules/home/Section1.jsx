@@ -23,7 +23,7 @@ const Section1 = () => {
 
         <div className="button_components flex md:flex-row flex-col items-center justify-start gap-[1rem]">
           <Button
-            onPress={() => navigate("/login")}
+            onPress={() => navigate("/signup")}
             name={"Get Started"}
             className={"bg-[#FC9A30] !w-full"}
           />
