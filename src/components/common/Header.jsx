@@ -124,13 +124,17 @@ const Header = () => {
         </div>
 
         <div className="icon_container relative flex items-center justify-center gap-2">
-          <button className="outline-none border-none">
+          <button title="Cart" className="outline-none border-none">
             <img src="/svgs/cart.svg" alt="Cart" />
           </button>
-          <button className="outline-none border-none md:block hidden">
+          <button
+            title="Wish List"
+            className="outline-none border-none md:block hidden"
+          >
             <img src="/svgs/like.svg" alt="Like" />
           </button>
           <button
+            title="Profile"
             onClick={() => setOpen(!open)}
             className="outline-none border-none"
           >
