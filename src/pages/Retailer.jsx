@@ -1,6 +1,7 @@
 import React from "react";
 import Form from "../components/common/Form";
 import Button from "../components/common/Button";
+import { Link } from "react-router-dom";
 
 const Retailer = () => {
   return (
@@ -38,13 +39,13 @@ const Retailer = () => {
             label={"Phone Number"}
             type={"number"}
             placeholder={"Enter Phone Number"}
-            containerStyle={"!border-none mb-6 bg-[#f2e1ce]/70"}
+            containerStyle={"!border-none mb-5 bg-[#f2e1ce]/70"}
           />
           <Form
             label={"Business Name"}
             type={"text"}
             placeholder={"Enter Business Name"}
-            containerStyle={"!border-none mb-6 bg-[#f2e1ce]/70"}
+            containerStyle={"!border-none mb-5 bg-[#f2e1ce]/70"}
           />
           <Form
             label={"Business Address"}
@@ -55,9 +56,19 @@ const Retailer = () => {
 
           <Button
             name={"Sign Up"}
-            className={"bg-[#FC9A30] w-full"}
+            className={"bg-[#FC9A30] w-full !text-[.9rem] !font-semibold"}
             onPress={() => console.log("ok")}
           />
+
+          <small className="block text-center gilroy mt-1">
+            Change of thoughts?{" "}
+            <Link
+              to={"/signup/manufacturer"}
+              className=" text-[#FC9A30] underline"
+            >
+              Sign up as Manufacturer
+            </Link>
+          </small>
         </section>
       </div>
     </div>
