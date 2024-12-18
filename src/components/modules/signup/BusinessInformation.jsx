@@ -3,16 +3,16 @@ import Button from "../../common/Button";
 import Form from "../../common/Form";
 import { Link } from "react-router-dom";
 
-const PersonalInformation = ({ setActive }) => {
+const BusinessInformation = ({ setActive }) => {
   const handleSubmitInfo = () => {
-    setActive(2);
+    setActive(3);
   };
 
   return (
     <div className="mt-[3.5rem] mb-[5rem]">
       <div className="page_title">
         <h1 className="gilroy-bold text-center text-[.9rem] mb-7">
-          Personal Information
+          Business Information
         </h1>
       </div>
 
@@ -121,4 +121,4 @@ const PersonalInformation = ({ setActive }) => {
   );
 };
 
-export default PersonalInformation;
+export default BusinessInformation;

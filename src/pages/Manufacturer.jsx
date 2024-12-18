@@ -1,5 +1,7 @@
 import React, { useState } from "react";
 import PersonalInformation from "../components/modules/signup/PersonalInformation";
+import BusinessInformation from "../components/modules/signup/BusinessInformation";
+import Objective from "../components/modules/signup/Objective";
 
 const Manufacturer = () => {
   const [active, setActive] = useState(1);
@@ -16,9 +18,9 @@ const Manufacturer = () => {
     {
       name: 3,
     },
-    {
-      name: 4,
-    },
+    // {
+    //   name: 4,
+    // },
   ];
 
   return (
@@ -39,8 +41,10 @@ const Manufacturer = () => {
           </div>
         ))}
       </div>
-      <div className="page_container gilroy-bold text-[2rem]">
-        {active === 1 && <PersonalInformation />}
+      <div className="page_container text-[2rem]">
+        {active === 1 && <PersonalInformation setActive={setActive} />}
+        {active === 2 && <BusinessInformation setActive={setActive} />}
+        {active === 3 && <Objective setActive={setActive} />}
       </div>
     </div>
   );
