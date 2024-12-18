@@ -48,20 +48,14 @@ const Retailer = () => {
 
             <div className="form-container w-full">
               <Form
-                label={"User Name"}
+                label={"Business Address"}
                 type={"text"}
-                placeholder={"Enter Username"}
-                containerStyle={"!border-none bg-[#f2e1ce]/70"}
+                placeholder={"Enter Business Address"}
+                containerStyle={"!border-none  bg-[#f2e1ce]/70"}
               />
             </div>
           </div>
 
-          <Form
-            label={"Business Address"}
-            type={"text"}
-            placeholder={"Enter Business Address"}
-            containerStyle={"!border-none mb-3 bg-[#f2e1ce]/70"}
-          />
           <Form
             label={"Password"}
             type={"password"}
