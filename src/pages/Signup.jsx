@@ -9,7 +9,7 @@ const Signup = () => {
   return (
     <div className="page_container md:pt-0 pb-[4rem]">
       <div className="nav-container mb-[4rem] py-4 px-4 border-b-[1px] border-gray-200">
-        <div className="icon">
+        <div onClick={() => navigate("/")} className="icon">
           <img
             src="/svgs/company.svg"
             alt=""
