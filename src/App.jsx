@@ -5,6 +5,7 @@ import MarketPlace from "./pages/MarketPlace";
 import CatchAll from "./pages/404";
 import ScrollToTop from "./helper/ScrollToTop";
 import Login from "./pages/Login";
+import Signup from "./pages/Signup";
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         {/* <Route path="/login" element={<Login />} /> */}
+        <Route path="/signup" element={<Signup />} />
         <Route path="/marketplace" element={<MarketPlace />} />
         <Route path="/*" element={<CatchAll />} />
       </Routes>

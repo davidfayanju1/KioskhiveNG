@@ -1,6 +1,6 @@
 import React from "react";
 import { useState } from "react";
-import { useNavigate } from "react-router-dom";
+import { useNavigate, Link } from "react-router-dom";
 import Form from "./Form";
 import Button from "./Button";
 
@@ -138,44 +138,60 @@ const Header = () => {
           </button>
 
           {open && (
-            <div className="modal_component absolute bg-white top-[2rem] md:right-[-1.5rem] right-0 shadow-lg rounded-[6px] min-h-[20rem] p-[1rem] py-[1.5rem] md:w-[30rem] w-[20rem] z-10">
-              <span className="title block mb-9 gilroy-semibold font-bold text-center text-[1rem]">
-                Sign In To Your Account
-              </span>
-              <div className="form_container">
-                <Form
-                  type={"text"}
-                  containerStyle={"mb-4"}
-                  placeholder={"Enter Email"}
-                  label={"Email Address"}
-                  onChange={(e) => console.log(e.target.value)}
-                />
+            <div
+              onClick={() => setOpen(false)}
+              className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50"
+            >
+              <div
+                onClick={(e) => e.stopPropagation()}
+                className="modal_component bg-white shadow-lg rounded-[6px] min-h-[20rem] p-[1rem] py-[1.5rem] md:w-[30rem] w-[21.5rem] z-10"
+              >
+                <span className="title block mb-9 gilroy-semibold font-bold text-center text-[1rem]">
+                  Sign In To Your Account
+                </span>
+                <div className="form_container">
+                  <Form
+                    type={"text"}
+                    containerStyle={"mb-4"}
+                    placeholder={"Enter Email"}
+                    label={"Email Address"}
+                    onChange={(e) => console.log(e.target.value)}
+                  />
 
-                <Form
-                  type={"password"}
-                  containerStyle={"mb-[2rem]"}
-                  placeholder={"Enter Password"}
-                  label={"Password"}
-                  onChange={(e) => console.log(e.target.value)}
-                />
+                  <Form
+                    type={"password"}
+                    containerStyle={""}
+                    placeholder={"Enter Password"}
+                    label={"Password"}
+                    onChange={(e) => console.log(e.target.value)}
+                  />
+                  <Link
+                    to="/forgot-password"
+                    className="text-[.75rem] gilroy-semibold mb-[1.5rem] text-[#2DA5F3] block text-right"
+                  >
+                    Forgot Password?
+                  </Link>
 
-                <Button
-                  name={"LOGIN"}
-                  className={"bg-[#FC9A30] w-full !text-[.8rem]"}
-                />
-                <div className="flex-contianer flex items-center my-[1rem] justify-between">
-                  <div className="block h-[.0035rem] bg-[#E4E7E9] w-[23%]"></div>
-                  <span className="block gilroy text-[#77878F] text-[.8rem]">
-                    Don't have an account
-                  </span>
-                  <div className="block h-[.0035rem] bg-[#E4E7E9] w-[23%]"></div>
+                  <Button
+                    name={"LOGIN"}
+                    className={"bg-[#FC9A30] w-full !text-[.8rem] !py-[.8rem]"}
+                  />
+
+                  <div className="flex-contianer flex items-center my-[1rem] justify-between">
+                    <div className="block h-[.0035rem] bg-[#E4E7E9] w-[23%]"></div>
+                    <span className="block gilroy text-[#77878F] text-[.8rem]">
+                      Don't have an account
+                    </span>
+                    <div className="block h-[.0035rem] bg-[#E4E7E9] w-[23%]"></div>
+                  </div>
+                  <Button
+                    onPress={() => navigate("/signup")}
+                    name={"CREATE ACCOUNT"}
+                    className={
+                      "border-[#FC9A30] !border-solid !text-[.7rem] border-[1px] w-full !text-[#FC9A30] !py-[.8rem]"
+                    }
+                  />
                 </div>
-                <Button
-                  name={"CREATE ACCOUNT"}
-                  className={
-                    "border-[#FC9A30] !border-solid !text-[.7rem] border-[1px] w-full !text-[#FC9A30]"
-                  }
-                />
               </div>
             </div>
           )}
