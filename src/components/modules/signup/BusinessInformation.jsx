@@ -8,6 +8,64 @@ const BusinessInformation = ({ setActive }) => {
     setActive(3);
   };
 
+  const categories = [
+    {
+      name: "Top Selling",
+      url: "/top-selling",
+    },
+    {
+      name: "New",
+      url: "/new",
+    },
+    {
+      name: "Men",
+      url: "/men",
+    },
+    {
+      name: "Home and decor",
+      url: "/Home-decor",
+    },
+    {
+      name: "Women",
+      url: "/women",
+    },
+
+    {
+      name: "Jewelries",
+      url: "Jewelries",
+    },
+
+    {
+      name: "Make over",
+      url: "/makeover",
+    },
+
+    {
+      name: "Adire",
+      url: "/adire",
+    },
+
+    {
+      name: "Paper and Novelty",
+      url: "/paper-novelty",
+    },
+
+    {
+      name: "Scented Candles",
+      url: "/candles",
+    },
+
+    {
+      name: "Pets",
+      url: "/pets",
+    },
+
+    {
+      name: "Kiddies Lounge",
+      url: "/kiddies-lounge",
+    },
+  ];
+
   return (
     <div className="mt-[3.5rem] mb-[5rem]">
       <div className="page_title">
@@ -20,17 +78,17 @@ const BusinessInformation = ({ setActive }) => {
         <div className="flex-container flex items-center justify-center gap-3 md:flex-row flex-col">
           <div className="form_container w-full">
             <Form
-              label={"Manufacturer Name"}
+              label={"Business Name"}
               type={"text"}
-              placeholder={"Enter Manufacturer Name"}
+              placeholder={"Enter Business/Brand Name"}
               containerStyle={"!border-none bg-[#f2e1ce]/70"}
             />
           </div>
           <div className="form_container w-full">
             <Form
-              label={"Company Name"}
+              label={"Business Email"}
               type={"text"}
-              placeholder={"Enter Company Name"}
+              placeholder={"Enter Business Email"}
               containerStyle={"!border-none bg-[#f2e1ce]/70"}
             />
           </div>
@@ -39,18 +97,19 @@ const BusinessInformation = ({ setActive }) => {
         <div className="flex-container flex items-center justify-center gap-3 md:flex-row flex-col">
           <div className="form_container w-full">
             <Form
-              label={"Email"}
-              type={"email"}
-              placeholder={"Enter Email"}
+              label={"Business Line"}
+              type={"number"}
+              placeholder={"Enter Business Line"}
               containerStyle={"!border-none bg-[#f2e1ce]/70"}
             />
           </div>
           <div className="form_container w-full">
             <Form
-              label={"Phone Number"}
-              type={"number"}
+              label={"Business Type"}
+              type={"select"}
               placeholder={"Enter Phone Number"}
               containerStyle={"!border-none bg-[#f2e1ce]/70"}
+              options={categories}
             />
           </div>
         </div>
@@ -114,7 +173,9 @@ const BusinessInformation = ({ setActive }) => {
         <Button
           onPress={handleSubmitInfo}
           name={"Submit"}
-          className={"bg-[#FC9A30] !text-[.9rem] w-full mt-[3rem]"}
+          className={
+            "bg-[#556AFF] !rounded-[9px] !text-[.9rem] w-full mt-[3rem]"
+          }
         />
       </div>
     </div>

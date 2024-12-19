@@ -5,8 +5,31 @@ import { Link } from "react-router-dom";
 
 const PersonalInformation = ({ setActive }) => {
   const handleSubmitInfo = () => {
+    window.scrollTo({ top: 0, behavior: "smooth" });
     setActive(2);
   };
+
+  const idTypes = [
+    {
+      name: "National ID card",
+    },
+
+    {
+      name: "NIN Slip",
+    },
+
+    {
+      name: "National Passport",
+    },
+
+    {
+      name: "Driver's License",
+    },
+
+    {
+      name: "Voter's Card",
+    },
+  ];
 
   return (
     <div className="mt-[3.5rem] mb-[5rem]">
@@ -20,9 +43,9 @@ const PersonalInformation = ({ setActive }) => {
         <div className="flex-container flex items-center justify-center gap-3 md:flex-row flex-col">
           <div className="form_container w-full">
             <Form
-              label={"Manufacturer Name"}
+              label={"Full Name"}
               type={"text"}
-              placeholder={"Enter Manufacturer Name"}
+              placeholder={"Enter Full Name"}
               containerStyle={"!border-none bg-[#f2e1ce]/70"}
             />
           </div>
@@ -41,7 +64,7 @@ const PersonalInformation = ({ setActive }) => {
             <Form
               label={"Email"}
               type={"email"}
-              placeholder={"Enter Email"}
+              placeholder={"Enter Personal Email"}
               containerStyle={"!border-none bg-[#f2e1ce]/70"}
             />
           </div>
@@ -58,23 +81,12 @@ const PersonalInformation = ({ setActive }) => {
         <div className="flex-container flex items-center justify-center gap-3 md:flex-row flex-col">
           <div className="form_container w-full">
             <Form
-              label={"Address"}
-              type={"email"}
-              placeholder={"Enter Address"}
-              containerStyle={"!border-none bg-[#f2e1ce]/70"}
-            />
-          </div>
-          <div className="form_container w-full">
-            <Form
-              label={"Local Government Area"}
+              label={"Nationality"}
               type={"text"}
-              placeholder={"Enter LGA"}
+              placeholder={"Enter Country"}
               containerStyle={"!border-none bg-[#f2e1ce]/70"}
             />
           </div>
-        </div>
-
-        <div className="flex-container flex items-center justify-center gap-3 md:flex-row flex-col">
           <div className="form_container w-full">
             <Form
               label={"State Of Origin"}
@@ -83,11 +95,22 @@ const PersonalInformation = ({ setActive }) => {
               containerStyle={"!border-none bg-[#f2e1ce]/70"}
             />
           </div>
+        </div>
+
+        <div className="flex-container flex items-center justify-center gap-3 md:flex-row flex-col">
           <div className="form_container w-full">
             <Form
-              label={"Nationality"}
+              label={"Local Government Area"}
               type={"text"}
-              placeholder={"Enter Country"}
+              placeholder={"Enter LGA"}
+              containerStyle={"!border-none bg-[#f2e1ce]/70"}
+            />
+          </div>
+          <div className="form_container w-full">
+            <Form
+              label={"Address"}
+              type={"email"}
+              placeholder={"Enter Address"}
               containerStyle={"!border-none bg-[#f2e1ce]/70"}
             />
           </div>
@@ -96,9 +119,10 @@ const PersonalInformation = ({ setActive }) => {
           <div className="form_container w-full">
             <Form
               label={"ID Type"}
-              type={"text"}
+              type={"select"}
               placeholder={"Enter Type Of Id"}
               containerStyle={"!border-none bg-[#f2e1ce]/70"}
+              options={idTypes}
             />
           </div>
           <div className="form_container w-full">
@@ -114,7 +138,9 @@ const PersonalInformation = ({ setActive }) => {
         <Button
           onPress={handleSubmitInfo}
           name={"Submit"}
-          className={"bg-[#FC9A30] !text-[.9rem] w-full mt-[3rem]"}
+          className={
+            "bg-[#FC9A30] hover:bg-[#b77b3c] transition-all ease-in-out delay-75 !rounded-[6px] !text-[.9rem] w-full mt-[3rem]"
+          }
         />
       </div>
     </div>

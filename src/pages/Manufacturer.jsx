@@ -29,7 +29,7 @@ const Manufacturer = () => {
         {steps.map((item, index) => (
           <div className="button_container flex items-center">
             <button
-              className={`rounded-full flex items-center justify-center ${
+              className={`rounded-full gilroy flex items-center justify-center ${
                 item.name === active ? "bg-[#FC9A30]" : "bg-gray-200"
               } h-[2rem] w-[2rem] text-white `}
             >
