@@ -36,7 +36,7 @@ const Manufacturer = () => {
               {item.name}
             </button>
             {steps.length - 1 !== index && (
-              <div className="line block w-[3rem] bg-gray-300 h-[.0033rem]"></div>
+              <div className="line block w-[3rem] bg-gray-300 h-[.004rem]"></div>
             )}
           </div>
         ))}
