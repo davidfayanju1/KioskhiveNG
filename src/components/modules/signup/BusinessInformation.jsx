@@ -10,14 +10,6 @@ const BusinessInformation = ({ setActive }) => {
 
   const categories = [
     {
-      name: "Top Selling",
-      url: "/top-selling",
-    },
-    {
-      name: "New",
-      url: "/new",
-    },
-    {
       name: "Men",
       url: "/men",
     },
@@ -117,17 +109,17 @@ const BusinessInformation = ({ setActive }) => {
         <div className="flex-container flex items-center justify-center gap-3 md:flex-row flex-col">
           <div className="form_container w-full">
             <Form
-              label={"Address"}
-              type={"email"}
-              placeholder={"Enter Address"}
+              label={"About"}
+              type={"text"}
+              placeholder={"Describe what you do.."}
               containerStyle={"!border-none bg-[#f2e1ce]/70"}
             />
           </div>
           <div className="form_container w-full">
             <Form
-              label={"Local Government Area"}
+              label={"Business Purpose"}
               type={"text"}
-              placeholder={"Enter LGA"}
+              placeholder={"Explain your business goals"}
               containerStyle={"!border-none bg-[#f2e1ce]/70"}
             />
           </div>
@@ -136,17 +128,17 @@ const BusinessInformation = ({ setActive }) => {
         <div className="flex-container flex items-center justify-center gap-3 md:flex-row flex-col">
           <div className="form_container w-full">
             <Form
-              label={"State Of Origin"}
+              label={"Target Audience"}
               type={"text"}
-              placeholder={"Enter State of Origin"}
+              placeholder={"Enter Business Target Audience"}
               containerStyle={"!border-none bg-[#f2e1ce]/70"}
             />
           </div>
           <div className="form_container w-full">
             <Form
-              label={"Nationality"}
+              label={"Business Address"}
               type={"text"}
-              placeholder={"Enter Country"}
+              placeholder={"Enter Business Address"}
               containerStyle={"!border-none bg-[#f2e1ce]/70"}
             />
           </div>
@@ -154,17 +146,17 @@ const BusinessInformation = ({ setActive }) => {
         <div className="flex-container flex items-center justify-center gap-3 md:flex-row flex-col">
           <div className="form_container w-full">
             <Form
-              label={"ID Type"}
+              label={"Registration Number"}
               type={"text"}
-              placeholder={"Enter Type Of Id"}
+              placeholder={"Enter CAC Registration Number"}
               containerStyle={"!border-none bg-[#f2e1ce]/70"}
             />
           </div>
           <div className="form_container w-full">
             <Form
-              label={"Upload ID"}
+              label={"Upload Certificate"}
               type={"text"}
-              placeholder={"Upload your id"}
+              placeholder={"Upload Certificate"}
               containerStyle={"!border-none bg-[#f2e1ce]/70"}
             />
           </div>
