@@ -230,7 +230,7 @@ const Nav = ({ active }) => {
       </div>
       <div className="sign_button md:block hidden">
         <Button
-          onPress={() => navigate("/login")}
+          onPress={() => navigate("/signup")}
           name={"Sign Up"}
           className={"bg-[#FC9A30]"}
         />
