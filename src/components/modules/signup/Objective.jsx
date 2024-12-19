@@ -38,7 +38,7 @@ const Objective = () => {
           onPress={() => navigate("/marketplace")}
           name={"Complete"}
           className={
-            "bg-[#556AFF] !rounded-[9px] !text-[.9rem] w-full mt-[3rem]"
+            "bg-green-900 !rounded-[9px] !text-[.9rem] w-full mt-[3rem]"
           }
         />
       </div>
